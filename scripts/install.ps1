@@ -2616,8 +2616,6 @@ function Install-Venv {
             } catch {
                 Write-Warn "Could not enumerate gateway scheduled tasks: $($_.Exception.Message)"
             }
-            # The launcher CLI (ulak.exe) plus its child tree.
-            & taskkill /F /T /IM ulak.exe /FI "PID ne $myPid" 2>$null | Out-Null
             # taskkill /IM ulak.exe is NOT enough: the gateway/agent that a
             # scheduled task or watchdog autostarts runs as
             # `pythonw.exe -m ulak_cli.main gateway run` straight out of
