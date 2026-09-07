@@ -15,9 +15,9 @@
  *      fails closed — the subscription fix must not loosen identity matching.
  */
 
-import type * as UlakSdk from '@ulak/plugin-sdk'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { act, cleanup, render, screen, waitFor } from '@testing-library/react'
+import type * as UlakSdk from '@ulak/plugin-sdk'
 import type { atom } from 'nanostores'
 import { afterEach, beforeAll, beforeEach, describe, expect, it, vi } from 'vitest'
 

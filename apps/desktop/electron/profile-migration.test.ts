@@ -269,10 +269,7 @@ test('findRunningGatewayProfiles preserves order of allProfiles', () => {
   })
 
   const deps = { ...fs, isUlakProcess: () => true }
-  assert.deepEqual(findRunningGatewayProfiles('/home/u/.ulak/profiles', ['coder', 'writer'], deps), [
-    'coder',
-    'writer'
-  ])
+  assert.deepEqual(findRunningGatewayProfiles('/home/u/.ulak/profiles', ['coder', 'writer'], deps), ['coder', 'writer'])
 })
 
 // ---------------------------------------------------------------------------
@@ -536,10 +533,7 @@ test('profileStateDbPath puts default at ulakHome, named under profilesRoot', ()
 })
 
 test('profileGatewayPidPath puts default at ulakHome', () => {
-  assert.equal(
-    profileGatewayPidPath('default', '/home/u/.ulak', '/home/u/.ulak/profiles'),
-    '/home/u/.ulak/gateway.pid'
-  )
+  assert.equal(profileGatewayPidPath('default', '/home/u/.ulak', '/home/u/.ulak/profiles'), '/home/u/.ulak/gateway.pid')
   assert.equal(
     profileGatewayPidPath('coder', '/home/u/.ulak', '/home/u/.ulak/profiles'),
     '/home/u/.ulak/profiles/coder/gateway.pid'

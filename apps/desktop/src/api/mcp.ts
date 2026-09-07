@@ -1,6 +1,6 @@
 import type { McpCatalogResponse, McpServerSummary } from '@/types/ulak'
 
-import { capabilityScoped, ulakApi, type ProfileScope, profileScoped } from './client'
+import { capabilityScoped, type ProfileScope, profileScoped, ulakApi } from './client'
 
 export interface McpTestResult {
   ok: boolean

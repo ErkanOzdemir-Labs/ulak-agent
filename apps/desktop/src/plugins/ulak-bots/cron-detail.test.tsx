@@ -7,8 +7,8 @@
  * and no second mutation path beside the row's own switch and delete.
  */
 
-import type * as UlakSdk from '@ulak/plugin-sdk'
 import { cleanup, render, screen, within } from '@testing-library/react'
+import type * as UlakSdk from '@ulak/plugin-sdk'
 import { afterEach, beforeAll, describe, expect, it, vi } from 'vitest'
 
 import type { RoutineJob } from './types'

@@ -1,9 +1,9 @@
 import { atom } from 'nanostores'
 
-import { getLocalModelsJobs, getLocalModelsStatus } from '@/ulak'
 import { translateNow } from '@/i18n'
 import { notify, notifyError } from '@/store/notifications'
 import type { LocalRuntimeJob } from '@/types/ulak'
+import { getLocalModelsJobs, getLocalModelsStatus } from '@/ulak'
 
 // App-level tracker for local-runtime jobs (runtime installs, model
 // downloads). The AUTHORITY is the backend job registry — this store is a

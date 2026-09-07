@@ -1,6 +1,6 @@
 import { createContext, type ReactNode, useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react'
 
-import { getUlakConfigRecord, type UlakConfigRecord, saveUlakConfig } from '@/ulak'
+import { getUlakConfigRecord, saveUlakConfig, type UlakConfigRecord } from '@/ulak'
 
 import { TRANSLATIONS } from './catalog'
 import { DEFAULT_LOCALE, localeConfigValue, normalizeLocale } from './languages'

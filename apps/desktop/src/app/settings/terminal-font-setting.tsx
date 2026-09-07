@@ -8,10 +8,10 @@ import {
 } from '@/app/right-sidebar/terminal/terminal-font'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
-import { saveUlakConfig } from '@/ulak'
 import { useI18n } from '@/i18n'
 import { notifyError } from '@/store/notifications'
 import type { UlakConfigRecord } from '@/types/ulak'
+import { saveUlakConfig } from '@/ulak'
 
 import { setUlakConfigCache, useUlakConfigRecord } from '../hooks/use-config-record'
 import { useOnProfileSwitch } from '../hooks/use-on-profile-switch'

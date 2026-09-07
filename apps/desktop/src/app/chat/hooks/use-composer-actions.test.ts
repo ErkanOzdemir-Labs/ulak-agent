@@ -8,8 +8,8 @@ import {
   attachmentPreviewDataUrl,
   type DroppedFile,
   extractDroppedFiles,
-  ULAK_PATHS_MIME,
   partitionDroppedFiles,
+  ULAK_PATHS_MIME,
   useComposerActions
 } from './use-composer-actions'
 

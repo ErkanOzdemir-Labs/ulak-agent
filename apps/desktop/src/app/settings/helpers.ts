@@ -1,5 +1,5 @@
 import { asText, normalize } from '@/lib/text'
-import type { ConfigFieldSchema, UlakConfigRecord, ToolsetInfo } from '@/types/ulak'
+import type { ConfigFieldSchema, ToolsetInfo, UlakConfigRecord } from '@/types/ulak'
 
 import { BUILTIN_PERSONALITIES, ENUM_OPTIONS, PROVIDER_GROUPS, SECTIONS } from './constants'
 

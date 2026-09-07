@@ -1,12 +1,12 @@
-import { isGatewayReauthRequired, resolveGatewayWsUrl } from '@ulak/shared'
 import { useStore } from '@nanostores/react'
+import { isGatewayReauthRequired, resolveGatewayWsUrl } from '@ulak/shared'
 import { useCallback, useEffect, useRef } from 'react'
 
-import type { UlakGateway } from '@/ulak'
 import { RECONNECT_ATTEMPT_TIMEOUT_MS, withTimeout } from '@/lib/with-timeout'
 import { $gateway, ensureActiveGatewayOpen, isActivePrimary } from '@/store/gateway'
 import { $activeGatewayProfile } from '@/store/profile'
 import { $gatewayState, setConnection } from '@/store/session'
+import type { UlakGateway } from '@/ulak'
 
 export function useGatewayRequest() {
   const gatewayState = useStore($gatewayState)

@@ -1,5 +1,5 @@
-import { Box, Text, useStdout } from '@ulak/ink'
 import { useStore } from '@nanostores/react'
+import { Box, Text, useStdout } from '@ulak/ink'
 import { Component, type ReactNode } from 'react'
 
 import { $overlayState, patchOverlayState } from '../app/overlayStore.js'

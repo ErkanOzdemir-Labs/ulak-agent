@@ -48,7 +48,7 @@ import {
 import { dashboardFallbackArgs, sourceDeclaresServe } from './backend-command'
 import { createBackendConnectionState } from './backend-connection-state'
 import { BackendDialClaims } from './backend-dial-claim'
-import { buildDesktopBackendEnv, ulakManagedNodePathEntries, normalizeUlakHomeRoot } from './backend-env'
+import { buildDesktopBackendEnv, normalizeUlakHomeRoot, ulakManagedNodePathEntries } from './backend-env'
 import {
   isReauthRequiredError,
   makeNousCloudBackendDownError,
@@ -431,12 +431,6 @@ import {
 } from './window-state'
 import { hiddenWindowsChildOptions } from './windows-child-options'
 import {
-  buildPathExtCandidates,
-  chooseUpdaterArgs,
-  getVenvSitePackagesEntries,
-  resolveVenvUlakCommand
-} from './windows-ulak-path'
-import {
   connectWindowsRemote,
   detectRemotePlatform,
   helper,
@@ -458,6 +452,12 @@ import {
   writeSandboxMarker
 } from './windows-sandbox-fallback'
 import { installWindowsSystemCaTrust } from './windows-system-ca'
+import {
+  buildPathExtCandidates,
+  chooseUpdaterArgs,
+  getVenvSitePackagesEntries,
+  resolveVenvUlakCommand
+} from './windows-ulak-path'
 import { readWindowsUserEnvVar } from './windows-user-env'
 import { isPackagedInstallPath as isPackagedInstallPathUnderRoots } from './workspace-cwd'
 import { readWslWindowsClipboardImage } from './wsl-clipboard-image'
@@ -3765,9 +3765,7 @@ async function claimBackendChild(child, command, profile, nonce, outputTail: Bac
   } catch (error) {
     stopBackendChild(child)
     await waitForBackendExit(child)
-    throw new Error(
-      `Could not persist ownership for the Ulak backend: ${error.message}${outputTail?.describe() ?? ''}`
-    )
+    throw new Error(`Could not persist ownership for the Ulak backend: ${error.message}${outputTail?.describe() ?? ''}`)
   }
 }
 
@@ -5078,9 +5076,7 @@ function resolveUlakBackend(backendArgs) {
         }
       }
 
-      rememberLog(
-        `Ignoring existing Ulak CLI at ${ulakCommand}: --version probe failed; falling through to bootstrap.`
-      )
+      rememberLog(`Ignoring existing Ulak CLI at ${ulakCommand}: --version probe failed; falling through to bootstrap.`)
     }
   }
 
@@ -8746,9 +8742,7 @@ async function discoverCloudAgents(org?: string) {
       // A 401 means the portal session lapsed (and silent renewal could not
       // recover it) — surface it as a re-login, not a generic failure.
       if (error && error.statusCode === 401) {
-        const err = new Error(
-          'Your Ulak Cloud session has expired. Open Settings → Gateway and sign in again.'
-        ) as any
+        const err = new Error('Your Ulak Cloud session has expired. Open Settings → Gateway and sign in again.') as any
 
         err.needsCloudLogin = true
         err.cause = error
@@ -15062,10 +15056,7 @@ ipcMain.handle('ulak:window:openInTerminal', async (_event, sessionId, opts) => 
     const scriptDir = path.join(app.getPath('userData'), 'open-in-terminal')
     fs.mkdirSync(scriptDir, { recursive: true })
 
-    const scriptPath = path.join(
-      scriptDir,
-      `ulak-${crypto.randomBytes(6).toString('hex')}${terminalScriptExtension()}`
-    )
+    const scriptPath = path.join(scriptDir, `ulak-${crypto.randomBytes(6).toString('hex')}${terminalScriptExtension()}`)
 
     fs.writeFileSync(
       scriptPath,

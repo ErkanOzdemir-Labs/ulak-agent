@@ -1,7 +1,7 @@
 import { atom } from 'nanostores'
 
-import { type UlakOpenTarget, resolveUlakOpenPath } from '@/lib/ulak-open-target'
 import { persistString, storedString } from '@/lib/storage'
+import { resolveUlakOpenPath, type UlakOpenTarget } from '@/lib/ulak-open-target'
 
 import { $gateway } from './gateway'
 import { withinNativeNotifyBaseline } from './notify-baseline'

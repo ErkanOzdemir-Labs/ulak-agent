@@ -6,7 +6,6 @@ import { useSearchParams } from 'react-router'
 
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
-import { getElevenLabsVoices, getUlakConfigSchema, saveUlakConfig } from '@/ulak'
 import { useI18n } from '@/i18n'
 import { triggerHaptic } from '@/lib/haptics'
 import { confirm } from '@/store/confirm'
@@ -26,6 +25,7 @@ import { normalizeProfileKey } from '@/store/profile'
 import { repoDiscoveryPolicyFromConfig, repoDiscoveryPolicySignature, scanAndRecordRepos } from '@/store/projects'
 import { $settingsRequestProfile } from '@/store/settings-scope'
 import type { ConfigFieldSchema, UlakConfigRecord } from '@/types/ulak'
+import { getElevenLabsVoices, getUlakConfigSchema, saveUlakConfig } from '@/ulak'
 
 import { ulakConfigCacheWriter, useUlakConfigRecord } from '../hooks/use-config-record'
 import { useOnProfileSwitch } from '../hooks/use-on-profile-switch'
@@ -108,8 +108,7 @@ function ConfigSettingsInner({
   } = useQuery({
     // Base key when following the active profile (matches every pre-existing
     // consumer); suffixed only for an explicit scope override.
-    queryKey:
-      scopeProfile == null ? ['ulak-config-schema'] : ['ulak-config-schema', normalizeProfileKey(scopeProfile)],
+    queryKey: scopeProfile == null ? ['ulak-config-schema'] : ['ulak-config-schema', normalizeProfileKey(scopeProfile)],
     queryFn: () => getUlakConfigSchema(scopeProfile),
     staleTime: 5 * 60 * 1000
   })

@@ -6,12 +6,12 @@ import { type NewSessionSplitHandler, startNewSessionDrag } from '@/app/chat/new
 import { Codicon } from '@/components/ui/codicon'
 import { ConfirmDialog } from '@/components/ui/confirm-dialog'
 import type { UlakGitWorktree } from '@/global'
-import type { SessionInfo } from '@/ulak'
 import { useI18n } from '@/i18n'
 import { displayPath } from '@/lib/display-path'
 import { $dismissedWorktreeIds, dismissWorktree, setWorkspaceNodeOpen } from '@/store/layout'
 import { notifyError } from '@/store/notifications'
 import { removeWorktreePath } from '@/store/projects'
+import type { SessionInfo } from '@/ulak'
 
 import { SidebarRowStack } from '../chrome'
 

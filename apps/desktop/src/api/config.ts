@@ -4,17 +4,17 @@ import type {
   CustomEndpointUpdate,
   CustomEndpointValidationResponse,
   EnvVarInfo,
-  UlakConfig,
-  UlakConfigRecord,
   LogsResponse,
   OAuthPollResponse,
   OAuthProvidersResponse,
   OAuthStartResponse,
   OAuthSubmitResponse,
-  StatusResponse
+  StatusResponse,
+  UlakConfig,
+  UlakConfigRecord
 } from '@/types/ulak'
 
-import { capabilityScoped, ulakApi, type ProfileScope, profileScoped, STARTUP_REQUEST_TIMEOUT_MS } from './client'
+import { capabilityScoped, type ProfileScope, profileScoped, STARTUP_REQUEST_TIMEOUT_MS, ulakApi } from './client'
 
 export function getStatus(): Promise<StatusResponse> {
   return ulakApi<StatusResponse>({

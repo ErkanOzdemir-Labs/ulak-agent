@@ -9,8 +9,8 @@
  * frame's contentWindow and the identifier is charset-checked.
  */
 
-import type * as UlakSdk from '@ulak/plugin-sdk'
 import { cleanup, fireEvent, render, screen } from '@testing-library/react'
+import type * as UlakSdk from '@ulak/plugin-sdk'
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 
 const HUB_ORIGIN = 'https://ulak-agent.github.com/ErkanOzdemir-Labs'

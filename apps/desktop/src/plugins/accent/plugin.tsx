@@ -13,7 +13,7 @@
  * authored.
  */
 
-import type { UlakPlugin, PaletteContribution } from '@ulak/plugin-sdk'
+import type { PaletteContribution, UlakPlugin } from '@ulak/plugin-sdk'
 import { $accentOverride, PALETTE_AREA, setAccentOverride, STATUSBAR_AREAS } from '@ulak/plugin-sdk'
 
 import { AccentPickerTrigger } from './picker'

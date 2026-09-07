@@ -1,8 +1,8 @@
 import { useQuery } from '@tanstack/react-query'
 
-import { getUlakConfigRecord, type ProfileScope, profileScopeKey } from '@/ulak'
 import { queryClient, writeCache } from '@/lib/query-client'
 import type { UlakConfigRecord } from '@/types/ulak'
+import { getUlakConfigRecord, type ProfileScope, profileScopeKey } from '@/ulak'
 
 // One shared cache for the whole profile config record (`GET /api/config`).
 // Every settings surface (MCP, model, config) reads and writes through this key
@@ -41,8 +41,7 @@ export const useUlakConfigRecord = (profile?: ProfileScope) =>
 // write the suffixed per-profile cache instead — keeps the selector's optimistic
 // write-through landing on the same key its query reads.
 export const setUlakConfigCache = writeCache<UlakConfigRecord>(ULAK_CONFIG_KEY)
-export const ulakConfigCacheWriter = (profile?: ProfileScope) =>
-  writeCache<UlakConfigRecord>(ulakConfigKey(profile))
+export const ulakConfigCacheWriter = (profile?: ProfileScope) => writeCache<UlakConfigRecord>(ulakConfigKey(profile))
 
 export const invalidateUlakConfig = (profile?: ProfileScope) =>
   queryClient.invalidateQueries({ queryKey: ulakConfigKey(profile) })

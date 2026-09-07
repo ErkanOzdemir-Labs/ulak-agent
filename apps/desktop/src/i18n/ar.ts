@@ -2173,8 +2173,7 @@ export const ar = defineLocale({
     done: 'تم',
     applyingBody:
       'يتولّى مُحدِّث Ulak المهمة في نافذته الخاصة ويعيد فتح Ulak تلقائيا عند الانتهاء. الرجاء عدم إعادة فتح Ulak بنفسك أثناء التحديث.',
-    applyingBodyBackend:
-      'تطبّق الواجهة الخلفية البعيدة التحديث وستعيد التشغيل. يعيد Ulak الاتصال تلقائيا عند عودتها.',
+    applyingBodyBackend: 'تطبّق الواجهة الخلفية البعيدة التحديث وستعيد التشغيل. يعيد Ulak الاتصال تلقائيا عند عودتها.',
     applyingClose: 'ستُغلق هذه النافذة أثناء تشغيل التحديث، ثم يعيد Ulak فتح نفسه تلقائيا.',
     errorTitle: 'لم يكتمل التحديث',
     errorBody: 'لا داعي للقلق — لم يُفقد شيء. يمكنك إعادة المحاولة الآن.',
@@ -2281,8 +2280,7 @@ export const ar = defineLocale({
       },
       local: {
         short: 'مستضاف ذاتيا',
-        description:
-          'وجّه Ulak إلى نقطة نهاية محلية أو مستضافة ذاتيا متوافقة مع OpenAI (vLLM، llama.cpp، Ollama، إلخ).'
+        description: 'وجّه Ulak إلى نقطة نهاية محلية أو مستضافة ذاتيا متوافقة مع OpenAI (vLLM، llama.cpp، Ollama، إلخ).'
       }
     },
     backToSignIn: 'العودة إلى تسجيل الدخول',
@@ -2557,8 +2555,7 @@ export const ar = defineLocale({
       reloadingNow: 'جار إعادة تحميل المعاينة الآن.',
       restartFailedTitle: 'فشلت إعادة تشغيل المعاينة',
       restartFailedMessage: 'تعذّر على Ulak إعادة تشغيل الخادم.',
-      stillWorking:
-        'لا يزال Ulak يعمل، لكن لم تصل نتيجة إعادة التشغيل بعد. قد يكون أمر الخادم قيد التشغيل في المقدمة.',
+      stillWorking: 'لا يزال Ulak يعمل، لكن لم تصل نتيجة إعادة التشغيل بعد. قد يكون أمر الخادم قيد التشغيل في المقدمة.',
       workspaceReloading: 'تغيّرت مساحة العمل، جار إعادة تحميل المعاينة',
       fileChanged: url => `تغيّر الملف، جار إعادة تحميل المعاينة: ${url}`,
       filesChanged: (count, url) => `${count} تغييرات ملفات، جار إعادة تحميل المعاينة: ${url}`,

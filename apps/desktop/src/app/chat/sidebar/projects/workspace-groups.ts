@@ -1,6 +1,6 @@
 import type { UlakGitWorktree } from '@/global'
-import type { ProjectInfo, SessionInfo } from '@/ulak'
 import { normalize } from '@/lib/text'
+import type { ProjectInfo, SessionInfo } from '@/ulak'
 
 import { rankSessions } from '../order'
 

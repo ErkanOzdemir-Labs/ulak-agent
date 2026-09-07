@@ -2,8 +2,8 @@ import { describe, expect, it } from 'vitest'
 
 import {
   normalizeUlakOpenString,
-  pathFromUlakDeepLink,
   pathFromOpenDeepLink,
+  pathFromUlakDeepLink,
   resolveUlakOpenPath
 } from './ulak-open-target'
 

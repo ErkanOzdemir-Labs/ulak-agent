@@ -14,7 +14,6 @@ import './kanban.css'
 import {
   cn,
   Codicon,
-  type UlakPlugin,
   host,
   type KeybindContribution,
   KEYBINDS_AREA,
@@ -26,6 +25,7 @@ import {
   type SidebarNavContribution,
   STATUSBAR_AREAS,
   Tip,
+  type UlakPlugin,
   useQuery,
   useValue
 } from '@ulak/plugin-sdk'

@@ -2,7 +2,6 @@ import { LOCAL_CONNECTION_ID } from '@ulak/shared'
 import { atom, batch, computed } from 'nanostores'
 
 import type { UlakConnection } from '@/global'
-import { getProfiles, ulakApi, setApiRequestProfile, STARTUP_REQUEST_TIMEOUT_MS } from '@/ulak'
 import { invalidateProfileScopedQueries } from '@/lib/query-client'
 import {
   arraysEqual,
@@ -31,6 +30,7 @@ import { clearComposerSelectionOwner, setComposerSelectionOwner, setConnection }
 import type { SessionOwnerRoute } from '@/store/session-request-router'
 import { resetStarmapGraph } from '@/store/starmap'
 import type { ProfileInfo } from '@/types/ulak'
+import { getProfiles, setApiRequestProfile, STARTUP_REQUEST_TIMEOUT_MS, ulakApi } from '@/ulak'
 
 // Canonical key for a profile: trimmed, empty → "default". Used everywhere we
 // compare a session's owning profile against the live gateway's profile.

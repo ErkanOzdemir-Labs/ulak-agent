@@ -1,11 +1,11 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 
-import type * as UlakModule from '@/ulak'
-import { getSession } from '@/ulak'
 import { $activeGatewayProfile, $profiles } from '@/store/profile'
 import { $projectTree } from '@/store/projects'
 import { $cronSessions, $messagingSessions, $sessions } from '@/store/session'
 import type { SessionInfo } from '@/types/ulak'
+import type * as UlakModule from '@/ulak'
+import { getSession } from '@/ulak'
 
 import { cachedSessionRow, resolveSessionProfile, resolveStoredSession } from './utils'
 

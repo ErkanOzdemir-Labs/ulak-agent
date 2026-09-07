@@ -1,7 +1,6 @@
 import { atom } from 'nanostores'
 
 import { resetLiveRuntimeTracking } from '@/app/contrib/hooks/use-background-sync'
-import { resetSidebarBatchCapability } from '@/ulak'
 import { invalidateProfileScopedQueries } from '@/lib/query-client'
 import { clearArtifactRegistry } from '@/store/artifacts'
 import { invalidateCronJobsRequests, setCronJobs } from '@/store/cron'
@@ -27,6 +26,7 @@ import { clearAllSessionControl } from '@/store/session-control'
 import { resetSessionPinMirror } from '@/store/session-pin-sync'
 import { clearAllSessionStates } from '@/store/session-states'
 import { clearTranscriptTails } from '@/store/transcript-tail-cache'
+import { resetSidebarBatchCapability } from '@/ulak'
 
 // True while a connection switch is mid-flight — a Settings → Gateway apply
 // (wipe → re-dial, use-gateway-boot softSwitch) or a Sessions-switcher source

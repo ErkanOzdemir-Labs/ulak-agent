@@ -13,7 +13,7 @@ import type {
   MemoryStatusResponse
 } from '@/types/ulak'
 
-import { capabilityScoped, ulakApi, type ProfileScope, profileScoped } from './client'
+import { capabilityScoped, type ProfileScope, profileScoped, ulakApi } from './client'
 
 export const AUDIO_SPEAK_MIN_REQUEST_TIMEOUT_MS = 180_000
 export const AUDIO_SPEAK_MAX_REQUEST_TIMEOUT_MS = 600_000

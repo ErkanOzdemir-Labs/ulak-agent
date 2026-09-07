@@ -12,8 +12,8 @@
  * the row label must opt out of the auto minimum width.
  */
 
-import type * as UlakSdk from '@ulak/plugin-sdk'
 import { cleanup, render, screen } from '@testing-library/react'
+import type * as UlakSdk from '@ulak/plugin-sdk'
 import { afterEach, beforeAll, describe, expect, it, vi } from 'vitest'
 
 import { translateBots } from './i18n-test-helper'

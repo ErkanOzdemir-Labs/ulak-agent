@@ -2580,8 +2580,7 @@ export const ja = defineLocale({
       'セッショントークンまたはブラウザーサインインでリモートバックエンドを使用します。ローカルインストールは開始されません。',
     installLocalTitle: 'Ulak をローカルにインストール',
     installLocalDesc: 'Ulak をダウンロードし、Python 環境を作成して、このコンピューターでバックエンドを実行します。',
-    localStartUnavailable:
-      'ローカルインストールを開始できません。Ulak Desktop を再起動して、もう一度お試しください。',
+    localStartUnavailable: 'ローカルインストールを開始できません。Ulak Desktop を再起動して、もう一度お試しください。',
     remoteSetupTitle: '既存の Ulak に接続',
     remoteSetupDesc:
       'ゲートウェイ URL を入力してください。Ulak Desktop がトークンとブラウザーサインインのどちらが必要かを検出します。',
@@ -2989,8 +2988,7 @@ export const ja = defineLocale({
       address: 'アドレス',
       addressPlaceholder: 'アドレスを入力',
       blankPageBody: '上のアドレス欄に入力するか、Ulak にページを開くよう頼んでください。',
-      finishedRestarting: message =>
-        `Ulak がプレビューサーバーの再起動を完了しました${message ? `: ${message}` : ''}`,
+      finishedRestarting: message => `Ulak がプレビューサーバーの再起動を完了しました${message ? `: ${message}` : ''}`,
       failedRestarting: message => `サーバーの再起動に失敗しました: ${message}`,
       unknownError: '不明なエラー',
       restartedTitle: 'プレビューサーバーが再起動しました',
@@ -3286,8 +3284,7 @@ export const ja = defineLocale({
     sudoSendFailed: 'sudo パスワードを送信できませんでした',
     secretSendFailed: 'シークレットを送信できませんでした',
     sudoTitle: '管理者パスワード',
-    sudoDesc:
-      'Ulak は特権コマンドを実行するために sudo パスワードが必要です。ローカルエージェントにのみ送信されます。',
+    sudoDesc: 'Ulak は特権コマンドを実行するために sudo パスワードが必要です。ローカルエージェントにのみ送信されます。',
     sudoPlaceholder: 'sudo パスワード',
     secretTitle: 'シークレットが必要です',
     secretDesc: 'Ulak は続行するための認証情報が必要です。',

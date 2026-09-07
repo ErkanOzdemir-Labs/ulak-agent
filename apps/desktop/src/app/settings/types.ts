@@ -1,8 +1,8 @@
 import type { Dispatch, SetStateAction } from 'react'
 
-import type { UlakGateway } from '@/ulak'
 import type { IconComponent } from '@/lib/icons'
 import type { EnvVarInfo } from '@/types/ulak'
+import type { UlakGateway } from '@/ulak'
 
 export type SettingsView =
   | 'about'
