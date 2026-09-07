@@ -185,11 +185,11 @@ const config: Config = {
           items: [
             { label: 'Desktop Download', href: 'https://ulak-agent.github.com/ErkanOzdemir-Labs/' },
             { label: 'GitHub', href: 'https://github.com/ErkanOzdemir-Labs/ulak-agent' },
-            { label: 'Nous Research', href: 'https://github.com/ErkanOzdemir-Labs' },
+            { label: 'Ulak Labs', href: 'https://github.com/ErkanOzdemir-Labs' },
           ],
         },
       ],
-      copyright: `Built by <a href="https://github.com/ErkanOzdemir-Labs">Nous Research</a> · MIT License · ${new Date().getFullYear()}`,
+      copyright: `Built by <a href="https://github.com/ErkanOzdemir-Labs">Ulak Labs</a> · MIT License · ${new Date().getFullYear()}`,
     },
     prism: {
       theme: prismThemes.github,

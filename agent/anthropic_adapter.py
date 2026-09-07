@@ -454,7 +454,7 @@ def _oauth_wire_namer(anthropic_tools: List[Dict[str, Any]]):
 
 _OAUTH_SYSTEM_REPLACEMENTS = (
     ("Ulak Agent", "Claude Code"), ("Ulak agent", "Claude Code"),
-    ("ulak-agent", "claude-code"), ("Nous Research", "Anthropic"),
+    ("ulak-agent", "claude-code"), ("Ulak Labs", "Anthropic"),
 )
 
 

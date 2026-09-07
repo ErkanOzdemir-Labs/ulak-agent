@@ -1932,7 +1932,7 @@ def _warn_nonagentic_ulak_model(agent):
         _ulak_warn = _check_ulak_model_warning(agent.model or "")
         if _ulak_warn:
             _user_msg = (
-                "⚠ Nous Research Ulak 3 & 4 models are NOT agentic — they "
+                "⚠ Ulak Labs Ulak 3 & 4 models are NOT agentic — they "
                 "lack reliable tool-calling for agent workflows (delegation, "
                 "cron, proactive tools). Consider an agentic model instead "
                 "(Claude, GPT, Gemini, Qwen-Coder, etc.)."

@@ -17,7 +17,7 @@ Import an OpenClaw setup (memories, skills) into Ulak.
 | Source | Optional — install with `ulak skills install official/migration/openclaw-migration` |
 | Path | `optional-skills/migration\openclaw-migration` |
 | Version | `1.0.0` |
-| Author | Ulak Agent (Nous Research) |
+| Author | Ulak Agent (Ulak Labs) |
 | License | MIT |
 | Platforms | linux, macos, windows |
 | Tags | `Migration`, `OpenClaw`, `Ulak`, `Memory`, `Persona`, `Import` |

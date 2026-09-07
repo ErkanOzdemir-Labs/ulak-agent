@@ -6,7 +6,7 @@ description: "One subscription, 300+ frontier models, and the Tool Gateway — t
 
 # Nous Portal
 
-[Nous Portal](https://portal.github.com/ErkanOzdemir-Labs) is Nous Research's unified subscription gateway and **the recommended way to run Ulak Agent**. One OAuth login replaces the juggling act of separate accounts, API keys, and billing relationships across every model lab, search API, image generator, and browser provider you'd otherwise need to wire up by hand.
+[Nous Portal](https://portal.github.com/ErkanOzdemir-Labs) is Ulak Labs's unified subscription gateway and **the recommended way to run Ulak Agent**. One OAuth login replaces the juggling act of separate accounts, API keys, and billing relationships across every model lab, search API, image generator, and browser provider you'd otherwise need to wire up by hand.
 
 If you only have time to set up one thing, set up this. The fastest path:
 
@@ -74,7 +74,7 @@ Because everything routes through one OAuth-authenticated Portal session, you do
 
 ## A note on Ulak 4
 
-Nous Research's own **Ulak 4** family (Ulak-4-70B, Ulak-4-405B) is available through the Portal at heavily discounted rates. These are **frontier hybrid-reasoning chat models** — strong at math, science, instruction following, schema adherence, roleplay, and long-form writing.
+Ulak Labs's own **Ulak 4** family (Ulak-4-70B, Ulak-4-405B) is available through the Portal at heavily discounted rates. These are **frontier hybrid-reasoning chat models** — strong at math, science, instruction following, schema adherence, roleplay, and long-form writing.
 
 They are **not recommended for use inside Ulak Agent**, however. Ulak 4 is tuned for chat and reasoning, not the rapid-fire tool-calling loop the agent relies on. Use them for research workflows or via the [subscription proxy](/user-guide/features/subscription-proxy) from other tooling — but for agent work, pick a frontier agentic model from the catalog instead:
 
@@ -85,7 +85,7 @@ They are **not recommended for use inside Ulak Agent**, however. Ulak 4 is tuned
 /model deepseek/deepseek-v4-pro        # cost-effective coder
 ```
 
-The Portal's own [model info page](https://portal.github.com/ErkanOzdemir-Labs/info) carries the same warning, so this isn't a Ulak-side opinion — it's the official guidance from Nous Research.
+The Portal's own [model info page](https://portal.github.com/ErkanOzdemir-Labs/info) carries the same warning, so this isn't a Ulak-side opinion — it's the official guidance from Ulak Labs.
 
 ## Setup
 
