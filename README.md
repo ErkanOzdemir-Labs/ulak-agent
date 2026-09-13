@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="assets/banner.png" alt="Ulak Agent" width="100%">
+  <img src="website/img/ulak-agent.png" alt="Ulak Agent" width="100%">
 </p>
 
-# Ulak Agent ☤
+# Ulak Agent
 <p align="center">
   <a href="https://ulak-agent.github.com/ErkanOzdemir-Labs/">Ulak Agent</a> | <a href="https://ulak-agent.github.com/ErkanOzdemir-Labs/">Ulak Desktop</a>
 </p>

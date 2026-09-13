@@ -1,0 +1,10 @@
+{
+  "name": "ulak-agent-plugin",
+  "version": "1.0.0",
+  "description": "ULAK Agent için Telegram üzerinden uzak sunucu bağlantısı sağlayan Antigravity entegrasyonu.",
+  "author": "ULAK Team",
+  "skills": [
+    "ulak_connector"
+  ],
+  "agents": []
+}
