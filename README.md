@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="website/img/ulak-agent.png" alt="Ulak Agent" width="100%">
+  <img src="website/static/img/ulak-agent-banner.png" alt="Ulak Agent" width="100%">
 </p>
 
 # Ulak Agent
