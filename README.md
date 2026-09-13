@@ -4,21 +4,21 @@
 
 # Ulak Agent
 <p align="center">
-  <a href="https://ulak-agent.github.com/ErkanOzdemir-Labs/">Ulak Agent</a> | <a href="https://ulak-agent.github.com/ErkanOzdemir-Labs/">Ulak Desktop</a>
+  <a href="https://github.com/ErkanOzdemir-Labs/ulak-agent">Ulak Agent</a> | <a href="https://github.com/ErkanOzdemir-Labs/ulak-agent/releases">Ulak Desktop</a>
 </p>
 <p align="center">
-  <a href="https://ulak-agent.github.com/ErkanOzdemir-Labs/docs/"><img src="https://img.shields.io/badge/Docs-ulak--agent.github.com/ErkanOzdemir-Labs-FFD700?style=for-the-badge" alt="Documentation"></a>
+  <a href="website/docs/index.mdx"><img src="https://img.shields.io/badge/Docs-Ulak_Agent-FFD700?style=for-the-badge" alt="Documentation"></a>
   <a href="https://discord.gg/ErkanOzdemir-Labs"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord"></a>
   <a href="https://github.com/ErkanOzdemir-Labs/ulak-agent/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License: MIT"></a>
-  <a href="https://github.com/ErkanOzdemir-Labs"><img src="https://img.shields.io/badge/Built%20by-Nous%20Research-blueviolet?style=for-the-badge" alt="Built by Ulak Agent"></a>
+  <a href="https://github.com/ErkanOzdemir-Labs"><img src="https://img.shields.io/badge/Built%20by-ErkanOzdemir--Labs-blueviolet?style=for-the-badge" alt="Built by ErkanOzdemir-Labs"></a>
   <a href="README.zh-CN.md"><img src="https://img.shields.io/badge/Lang-中文-red?style=for-the-badge" alt="中文"></a>
   <a href="README.ur-pk.md"><img src="https://img.shields.io/badge/Lang-اردو-green?style=for-the-badge" alt="اردو"></a>
   <a href="README.es.md"><img src="https://img.shields.io/badge/Lang-Español-orange?style=for-the-badge" alt="Español"></a>
 </p>
 
-**The self-improving AI agent built by [Ulak Agent](https://github.com/ErkanOzdemir-Labs).** It's the only agent with a built-in learning loop — it creates skills from experience, improves them during use, nudges itself to persist knowledge, searches its own past conversations, and builds a deepening model of who you are across sessions. Run it on a $5 VPS, a GPU cluster, or serverless infrastructure that costs nearly nothing when idle. It's not tied to your laptop — talk to it from Telegram while it works on a cloud VM.
+**The self-improving AI agent built by [ErkanOzdemir-Labs](https://github.com/ErkanOzdemir-Labs).** It's the only agent with a built-in learning loop — it creates skills from experience, improves them during use, nudges itself to persist knowledge, searches its own past conversations, and builds a deepening model of who you are across sessions. Run it on a $5 VPS, a GPU cluster, or serverless infrastructure that costs nearly nothing when idle. It's not tied to your laptop — talk to it from Telegram while it works on a cloud VM.
 
-Use any model you want — [Nous Portal](https://portal.github.com/ErkanOzdemir-Labs), OpenRouter, OpenAI, your own endpoint, and [many others](https://ulak-agent.github.com/ErkanOzdemir-Labs/docs/integrations/providers). Switch with `ulak model` — no code changes, no lock-in.
+Use any model you want — [Ulak Portal](https://github.com/ErkanOzdemir-Labs/ulak-agent), OpenRouter, OpenAI, your own endpoint, and [many others](website/docs/integrations/providers.md). Switch with `ulak model` — no code changes, no lock-in.
 
 <table>
 <tr><td><b>A real terminal interface</b></td><td>Full TUI with multiline editing, slash-command autocomplete, conversation history, interrupt-and-redirect, and streaming tool output.</td></tr>
@@ -37,7 +37,7 @@ Use any model you want — [Nous Portal](https://portal.github.com/ErkanOzdemir-
 ### Linux, macOS, WSL2, Termux
 
 ```bash
-curl -fsSL https://ulak-agent.github.com/ErkanOzdemir-Labs/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/ErkanOzdemir-Labs/ulak-agent/main/install.sh | bash
 ```
 
 ### Windows (native, PowerShell)
@@ -47,14 +47,14 @@ curl -fsSL https://ulak-agent.github.com/ErkanOzdemir-Labs/install.sh | bash
 Run this in PowerShell:
 
 ```powershell
-iex (irm https://ulak-agent.github.com/ErkanOzdemir-Labs/install.ps1)
+iex (irm https://raw.githubusercontent.com/ErkanOzdemir-Labs/ulak-agent/main/install.ps1)
 ```
 
 The installer handles everything: uv, Python 3.11, Node.js, ripgrep, ffmpeg, **and a portable Git Bash** (MinGit, unpacked to `%LOCALAPPDATA%\ulak\git` — no admin required, completely isolated from any system Git install). Ulak uses this bundled Git Bash to run shell commands.
 
 If you already have Git installed, the installer detects it and uses that instead. Otherwise a ~45MB MinGit download is all you need — it won't touch or interfere with any system Git.
 
-> **Android / Termux:** The tested manual path is documented in the [Termux guide](https://ulak-agent.github.com/ErkanOzdemir-Labs/docs/getting-started/termux). On Termux, Ulak installs a curated `.[termux]` extra because the full `.[all]` extra currently pulls Android-incompatible voice dependencies.
+> **Android / Termux:** The tested manual path is documented in the [Termux guide](website/docs/getting-started/termux.md). On Termux, Ulak installs a curated `.[termux]` extra because the full `.[all]` extra currently pulls Android-incompatible voice dependencies.
 >
 > **Windows:** Native Windows is fully supported — the PowerShell one-liner above installs everything. If you'd rather use WSL2, the Linux command works there too. Native Windows install lives under `%LOCALAPPDATA%\ulak`; WSL2 installs under `~/.ulak` as on Linux.
 
@@ -117,13 +117,13 @@ ulak update       # Update to the latest version
 ulak doctor       # Diagnose any issues
 ```
 
-📖 **[Full documentation →](https://ulak-agent.github.com/ErkanOzdemir-Labs/docs/)**
+📖 **[Full documentation →](website/docs/index.mdx)**
 
 ---
 
-## Skip the API-key collection — Nous Portal
+## Skip the API-key collection — Ulak Portal
 
-Ulak works with whatever provider you want — that's not changing. But if you'd rather not collect five separate API keys for the model, web search, image generation, TTS, and a cloud browser, **[Nous Portal](https://portal.github.com/ErkanOzdemir-Labs)** covers all of them under one subscription:
+Ulak works with whatever provider you want — that's not changing. But if you'd rather not collect five separate API keys for the model, web search, image generation, TTS, and a cloud browser, **[Ulak Portal](https://github.com/ErkanOzdemir-Labs/ulak-agent)** covers all of them under one subscription:
 
 - **300+ models** — pick any of them with `/model <name>`
 - **Tool Gateway** — web search (Firecrawl), image generation (FAL), text-to-speech (OpenAI), cloud browser (Browser Use), all routed through your sub. No extra accounts.
@@ -134,7 +134,7 @@ One command from a fresh install:
 ulak setup --portal
 ```
 
-That logs you in via OAuth, sets Nous as your provider, and turns on the Tool Gateway. Check what's wired up any time with `ulak portal info`. Full details on the [Tool Gateway docs page](https://ulak-agent.github.com/ErkanOzdemir-Labs/docs/user-guide/features/tool-gateway).
+That logs you in via OAuth, sets Ulak as your provider, and turns on the Tool Gateway. Check what's wired up any time with `ulak portal info`. Full details on the [Tool Gateway docs page](website/docs/user-guide/features/tool-gateway.md).
 
 You can still bring your own keys per-tool whenever you want — the gateway is per-backend, not all-or-nothing.
 
@@ -156,31 +156,31 @@ Ulak has two entry points: start the terminal UI with `ulak`, or run the gateway
 | Interrupt current work         | `Ctrl+C` or send a new message                | `/stop` or send a new message                                                    |
 | Platform-specific status       | `/platforms`                                  | `/status`, `/sethome`                                                            |
 
-For the full command lists, see the [CLI guide](https://ulak-agent.github.com/ErkanOzdemir-Labs/docs/user-guide/cli) and the [Messaging Gateway guide](https://ulak-agent.github.com/ErkanOzdemir-Labs/docs/user-guide/messaging).
+For the full command lists, see the [CLI guide](website/docs/user-guide/cli.md) and the [Messaging Gateway guide](website/docs/user-guide/messaging/index.md).
 
 ---
 
 ## Documentation
 
-All documentation lives at **[ulak-agent.github.com/ErkanOzdemir-Labs/docs](https://ulak-agent.github.com/ErkanOzdemir-Labs/docs/)**:
+All documentation lives at **[website/docs](website/docs)**:
 
 | Section                                                                                             | What's Covered                                             |
 | --------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- |
-| [Quickstart](https://ulak-agent.github.com/ErkanOzdemir-Labs/docs/getting-started/quickstart)                 | Install → setup → first conversation in 2 minutes          |
-| [CLI Usage](https://ulak-agent.github.com/ErkanOzdemir-Labs/docs/user-guide/cli)                              | Commands, keybindings, personalities, sessions             |
-| [Configuration](https://ulak-agent.github.com/ErkanOzdemir-Labs/docs/user-guide/configuration)                | Config file, providers, models, all options                |
-| [Messaging Gateway](https://ulak-agent.github.com/ErkanOzdemir-Labs/docs/user-guide/messaging)                | Telegram, Discord, Slack, WhatsApp, Signal, Home Assistant |
-| [Security](https://ulak-agent.github.com/ErkanOzdemir-Labs/docs/user-guide/security)                          | Command approval, DM pairing, container isolation          |
-| [Tools & Toolsets](https://ulak-agent.github.com/ErkanOzdemir-Labs/docs/user-guide/features/tools)            | 40+ tools, toolset system, terminal backends               |
-| [Skills System](https://ulak-agent.github.com/ErkanOzdemir-Labs/docs/user-guide/features/skills)              | Procedural memory, Skills Hub, creating skills             |
-| [Memory](https://ulak-agent.github.com/ErkanOzdemir-Labs/docs/user-guide/features/memory)                     | Persistent memory, user profiles, best practices           |
-| [MCP Integration](https://ulak-agent.github.com/ErkanOzdemir-Labs/docs/user-guide/features/mcp)               | Connect any MCP server for extended capabilities           |
-| [Cron Scheduling](https://ulak-agent.github.com/ErkanOzdemir-Labs/docs/user-guide/features/cron)              | Scheduled tasks with platform delivery                     |
-| [Context Files](https://ulak-agent.github.com/ErkanOzdemir-Labs/docs/user-guide/features/context-files)       | Project context that shapes every conversation             |
-| [Architecture](https://ulak-agent.github.com/ErkanOzdemir-Labs/docs/developer-guide/architecture)             | Project structure, agent loop, key classes                 |
-| [Contributing](https://ulak-agent.github.com/ErkanOzdemir-Labs/docs/developer-guide/contributing)             | Development setup, PR process, code style                  |
-| [CLI Reference](https://ulak-agent.github.com/ErkanOzdemir-Labs/docs/reference/cli-commands)                  | All commands and flags                                     |
-| [Environment Variables](https://ulak-agent.github.com/ErkanOzdemir-Labs/docs/reference/environment-variables) | Complete env var reference                                 |
+| [Quickstart](website/docs/getting-started/quickstart.md)                 | Install → setup → first conversation in 2 minutes          |
+| [CLI Usage](website/docs/user-guide/cli.md)                              | Commands, keybindings, personalities, sessions             |
+| [Configuration](website/docs/user-guide/configuration.md)                | Config file, providers, models, all options                |
+| [Messaging Gateway](website/docs/user-guide/messaging/index.md)                | Telegram, Discord, Slack, WhatsApp, Signal, Home Assistant |
+| [Security](website/docs/user-guide/security.md)                          | Command approval, DM pairing, container isolation          |
+| [Tools & Toolsets](website/docs/user-guide/features/tools.md)            | 40+ tools, toolset system, terminal backends               |
+| [Skills System](website/docs/user-guide/features/skills.md)              | Procedural memory, Skills Hub, creating skills             |
+| [Memory](website/docs/user-guide/features/memory.md)                     | Persistent memory, user profiles, best practices           |
+| [MCP Integration](website/docs/user-guide/features/mcp.md)               | Connect any MCP server for extended capabilities           |
+| [Cron Scheduling](website/docs/user-guide/features/cron.md)              | Scheduled tasks with platform delivery                     |
+| [Context Files](website/docs/user-guide/features/context-files.md)       | Project context that shapes every conversation             |
+| [Architecture](website/docs/developer-guide/architecture.md)             | Project structure, agent loop, key classes                 |
+| [Contributing](website/docs/developer-guide/contributing.md)             | Development setup, PR process, code style                  |
+| [CLI Reference](website/docs/reference/cli-commands.md)                  | All commands and flags                                     |
+| [Environment Variables](website/docs/reference/environment-variables.md) | Complete env var reference                                 |
 
 ---
 
@@ -216,7 +216,7 @@ See `ulak claw migrate --help` for all options, or use the `openclaw-migration` 
 
 ## Contributing
 
-We welcome contributions! See the [Contributing Guide](https://ulak-agent.github.com/ErkanOzdemir-Labs/docs/developer-guide/contributing) for development setup, code style, and PR process.
+We welcome contributions! See the [Contributing Guide](website/docs/developer-guide/contributing.md) for development setup, code style, and PR process.
 
 Quick start for contributors — use the standard installer, then work from the
 full git checkout it creates at `$ULAK_HOME/ulak-agent` (usually
@@ -224,7 +224,7 @@ full git checkout it creates at `$ULAK_HOME/ulak-agent` (usually
 managed venv, lazy dependencies, gateway, and docs tooling.
 
 ```bash
-curl -fsSL https://ulak-agent.github.com/ErkanOzdemir-Labs/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/ErkanOzdemir-Labs/ulak-agent/main/install.sh | bash
 cd "${ULAK_HOME:-$HOME/.ulak}/ulak-agent"
 uv pip install -e ".[all,dev]"
 scripts/run_tests.sh
