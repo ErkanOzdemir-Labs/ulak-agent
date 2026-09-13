@@ -1,11 +1,10 @@
-import { type GatewayEvent, registryBackendScopeKey } from '@ulak/shared'
 import { useStore } from '@nanostores/react'
 import { act, cleanup, render, waitFor } from '@testing-library/react'
+import { type GatewayEvent, registryBackendScopeKey } from '@ulak/shared'
 import { useEffect, useMemo, useRef } from 'react'
 import { afterEach, beforeEach, describe, expect, it, type Mock, vi } from 'vitest'
 
 import { createSessionRpcDispatcher } from '@/app/contrib/session-rpc-dispatcher'
-import { getSession } from '@/ulak'
 import {
   activeGateway,
   activeGatewayConnectionId,
@@ -42,6 +41,7 @@ import {
 } from '@/store/session'
 import { foregroundSessionScopes } from '@/store/session-states'
 import type { SessionInfo } from '@/types/ulak'
+import { getSession } from '@/ulak'
 
 import type { ClientSessionState } from '../../types'
 

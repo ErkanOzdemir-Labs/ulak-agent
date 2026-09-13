@@ -10,8 +10,8 @@
  * goes through the object-aware `botRosterMeta`.
  */
 
-import type * as UlakSdk from '@ulak/plugin-sdk'
 import { cleanup, fireEvent, render, screen, waitFor, within } from '@testing-library/react'
+import type * as UlakSdk from '@ulak/plugin-sdk'
 import { afterEach, beforeAll, beforeEach, describe, expect, it, vi } from 'vitest'
 
 import { translateBots } from './i18n-test-helper'

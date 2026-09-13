@@ -30,8 +30,7 @@ export const tr: Translations = {
     previewLimit: 'Önizleme okunabilirlik için kısaltılmıştır. Konuşmanın tamamı içe aktarılır.',
     you: 'Sen',
     snapshot: "Bu konuşma zaten Ulak'ta. Devam etmek için mevcut kopyanızı açın.",
-    copyNotice:
-      'Konuşma metnini kopyalar. Kaynak dosyalar değişmeden kalır. Araç çıktısı ve muhakeme aktarılmaz.',
+    copyNotice: 'Konuşma metnini kopyalar. Kaynak dosyalar değişmeden kalır. Araç çıktısı ve muhakeme aktarılmaz.',
     importing: 'İçe aktarılıyor…',
     open: "Ulak'ta açıldı",
     continue: "Ulak'ta devam et",
@@ -137,7 +136,8 @@ export const tr: Translations = {
       remoteSignInHint: signInLabel =>
         `Kaydedilen uzak tarayıcı oturumundan çıkış yapar ve ardından ${signInLabel}'ı açar. Bunun yerine paketlenmiş arka uca geçiş yapmak için yerel ağ geçidini kullanın.`,
       signOutAndSignIn: 'Oturumu kapat ve oturum aç',
-      remoteFailureHint: "Ağ geçidi URL'sini kontrol edin ve Ağ Geçidi ayarları altında oturum açın veya yerel ağ geçidine geçin.",
+      remoteFailureHint:
+        "Ağ geçidi URL'sini kontrol edin ve Ağ Geçidi ayarları altında oturum açın veya yerel ağ geçidine geçin.",
       cloudDownTitle: 'Nous Cloud ajanı çalışmıyor',
       cloudDownDescription:
         'Bu ağ geçidinin bağlandığı Nous tarafından yönetilen bulut aracısı, bir sunucu hatası döndürüyor. Buradan yeniden başlatılamaz; durumunu kontrol edin, yerel ağ geçidine geçin veya destek alın.',
@@ -196,7 +196,8 @@ export const tr: Translations = {
       openaiRejectedApiKey: 'OpenAI API anahtarını reddetti.',
       openaiRejectedApiKeyWithStatus: status => `OpenAI API anahtarını reddetti (${status} geçersiz_api_anahtarı).`,
       openaiTtsNeedsKey: 'OpenAI TTS, VOICE_TOOLS_OPENAI_KEY veya OPENAI_API_KEY gerektirir.',
-      codeSkewRestartRequired: 'Bu arka uç, bir güncellemeyi takiben eski kod ile çalışıyor. Yeni kodu yüklemek için yeniden başlatın.'
+      codeSkewRestartRequired:
+        'Bu arka uç, bir güncellemeyi takiben eski kod ile çalışıyor. Yeni kodu yüklemek için yeniden başlatın.'
     },
     voice: {
       configureSpeechToText: 'Konuşmayı metne çevirme özelliğini ses modunu kullanacak şekilde yapılandırın.',
@@ -444,7 +445,8 @@ export const tr: Translations = {
     },
     plugins: {
       title: 'Masaüstü eklentileri',
-      blurb: 'Masaüstü eklentileri klasörüne paketlenmiş veya bırakılmış. Canlı yüklemeyi devre dışı bırakmak için kapatın.',
+      blurb:
+        'Masaüstü eklentileri klasörüne paketlenmiş veya bırakılmış. Canlı yüklemeyi devre dışı bırakmak için kapatın.',
       count: n => `${n} installed`,
       openFolder: 'Eklentiler klasörünü aç',
       rescan: 'Yeniden tara',
@@ -479,7 +481,8 @@ export const tr: Translations = {
         agentTargetRemote: profile => `Installs into the connected ${profile} backend`,
         desktopTarget: 'Bu uygulamanın yerel masaüstü eklentileri klasörüne yüklenir',
         desktopOnlyNote: 'Sadece masaüstü paketleri arka uç ajan eklentisi yüklemez.',
-        insecureWarning: 'Bu URL güvenli olmayan veya yerel bir şema kullanıyor. Üretim kurulumları için https:// veya git@ tercih edin.',
+        insecureWarning:
+          'Bu URL güvenli olmayan veya yerel bir şema kullanıyor. Üretim kurulumları için https:// veya git@ tercih edin.',
         securityHeading: 'Kurmadan önce',
         securityIntro:
           'Yalnızca güvendiğiniz kaynaklardan kurulum yapın — ne ekleneceğini görmek istiyorsanız aşağıdaki depoyu inceleyin.',
@@ -541,7 +544,8 @@ export const tr: Translations = {
       test: 'Test bildirimi gönder',
       testTitle: 'Ulak',
       testBody: 'Bildirimler çalışıyor.',
-      testSent: 'Test gönderildi. Eğer bir şey görünmüyorsa, işletim sisteminizin bildirim izinlerini ve Odak/ Rahatsız Etme ayarlarını kontrol edin.',
+      testSent:
+        'Test gönderildi. Eğer bir şey görünmüyorsa, işletim sisteminizin bildirim izinlerini ve Odak/ Rahatsız Etme ayarlarını kontrol edin.',
       testUnsupported: 'Bu sistem yerel bildirimleri desteklemiyor.',
       completionSoundTitle: 'Tamamlama Sesi',
       completionSoundDesc: 'Bir temsilcinin dönüşü bittiğinde çalınır. Bir ön ayar seçin ve burada önizleyin.',
@@ -588,7 +592,8 @@ export const tr: Translations = {
       sessionDensityComfortable: 'Rahat',
       sessionDensityDetailed: 'Detaylı',
       tabStripTitle: 'Sekme Şeridi',
-      tabStripDesc: 'Sekmeleri bir bölgenin üzerinde gösterin. Bir bölge tek bir pencere içerdiğinde otomatik olarak gizler.',
+      tabStripDesc:
+        'Sekmeleri bir bölgenin üzerinde gösterin. Bir bölge tek bir pencere içerdiğinde otomatik olarak gizler.',
       tabStripAuto: 'Otomatik',
       tabStripAlways: 'Her Zaman',
       tabStripNever: 'Asla',
@@ -599,7 +604,8 @@ export const tr: Translations = {
       terminalFontPreview: 'Glif önizlemesi',
       terminalFontReset: 'Varsayılanı kullan',
       translucencyTitle: 'Pencere Saydamlığı',
-      translucencyDesc: 'Tüm pencerenin, metin dahil, masaüstünüzün görünmesini sağlar. Açık ve koyu için ayrı ayarlanır.',
+      translucencyDesc:
+        'Tüm pencerenin, metin dahil, masaüstünüzün görünmesini sağlar. Açık ve koyu için ayrı ayarlanır.',
       translucencyGlassDesc:
         'Mat cam: Masaüstü pürüzsüz bir bulanıklıkla görünür, metin ise keskin kalır. Açık ve koyu için ayrı ayarlanır.',
       translucencyModeClear: 'Temiz',
@@ -621,11 +627,13 @@ export const tr: Translations = {
       backdropTitle: 'Sohbet Arka Planı',
       backdropDesc: 'Konuşmanın arkasındaki solgun heykel görüntüsü.',
       userBubbleTitle: 'Mesaj Balonu',
-      userBubbleDesc: "Kendi mesajlarınızın ne kadar şeffaf olduğunu gösterir. 0'da tamamen dolu; 100'de sadece dış çizgi kalır.",
+      userBubbleDesc:
+        "Kendi mesajlarınızın ne kadar şeffaf olduğunu gösterir. 0'da tamamen dolu; 100'de sadece dış çizgi kalır.",
       introSplashTitle: 'Giriş Animasyonu',
       introSplashDesc: 'Boş bir sohbette gösterilen logo ve mesaj kutusu.',
       reactionsTitle: 'Mesaj Tepkileri',
-      reactionsDesc: 'iMessage tarzı emoji tepkileri — mesajlara tepki verin ve Ulak sizin mesajlarınıza tepki verebilir.',
+      reactionsDesc:
+        'iMessage tarzı emoji tepkileri — mesajlara tepki verin ve Ulak sizin mesajlarınıza tepki verebilir.',
       tipsTitle: 'Uygulama İçi İpuçları',
       tipsDesc:
         'Uygulamanın bir kısmına işaret eden küçük bir baloncuk, bazen boşta iken ve Ulak yardımcı olduğunda gösterilir. Birini kapatmak, onu kalıcı olarak kaldırır.',
@@ -633,7 +641,8 @@ export const tr: Translations = {
       toursTitle: 'Rehberli Turlar',
       toursDesc: 'Ulak’ın sizi uygulama boyunca yönlendirmesine izin verin, ekranı karartarak her adımı öne çıkarır.',
       composerPopoutTitle: 'Yüzer Metin Alanı',
-      composerPopoutDesc: 'Metin alanını yerinden sürüklemeye izin verin. Bunu kapatmak, alt kısımda sabit kalmasını sağlar.',
+      composerPopoutDesc:
+        'Metin alanını yerinden sürüklemeye izin verin. Bunu kapatmak, alt kısımda sabit kalmasını sağlar.',
       vibeHeartsTitle: 'Vibe Kalpleri',
       vibeHeartsDesc:
         'Teşekkür, seni seviyorum, iyi bot veya kalp gönderdiğinizde yüzen kalpler. Yukarıdaki Mesaj Tepkilerinden ayrıdır.',
@@ -679,7 +688,8 @@ export const tr: Translations = {
         chooseTitle: 'Bir evcil hayvan seç',
         chooseDesc: 'Birini seçmek onu kurar (gerekirse) ve etkin hale getirir.',
         searchPlaceholder: 'Evcil hayvanlarda ara…',
-        unreachable: 'petdex galerisinin bağlantısına ulaşılamadı. Bağlantınızı kontrol edin ve bu sayfayı yeniden açın.',
+        unreachable:
+          'petdex galerisinin bağlantısına ulaşılamadı. Bağlantınızı kontrol edin ve bu sayfayı yeniden açın.',
         noMatch: query => `No pets match "${query}".`,
         installedTag: 'yüklendi',
         generatedTag: 'Oluşturuldu',
@@ -762,9 +772,11 @@ export const tr: Translations = {
       toolsetsWipeConfirm:
         'Tüm etkin araç setleri kaldırılsın mı? Bu, onları yeniden etkinleştirene kadar belleği, terminali, web aramasını, devretmeyi ve diğer çoğu aracı devre dışı bırakır.',
       keepAwakeTitle: 'Bilgisayarı uyanık tut',
-      keepAwakeDesc: 'Bu makinenin uyumasını durdur, böylece uzun veya gece çalışmaları devam edebilir. Ekran yine de karartılabilir.',
+      keepAwakeDesc:
+        'Bu makinenin uyumasını durdur, böylece uzun veya gece çalışmaları devam edebilir. Ekran yine de karartılabilir.',
       disableF12Title: 'F12 Geliştirici Araçlarını devre dışı bırak',
-      disableF12Desc: 'F12 tuşunun Geliştirici Araçlarını açmasını engelle. Ctrl+Shift+I (veya Mac’te Cmd+Opt+I) hâlâ çalışır.',
+      disableF12Desc:
+        'F12 tuşunun Geliştirici Araçlarını açmasını engelle. Ctrl+Shift+I (veya Mac’te Cmd+Opt+I) hâlâ çalışır.',
       attachmentSizeTitle: 'Maks. önizleme / görüntü yükleme boyutu',
       attachmentSizeDesc:
         'Masaüstünün önizleme ve görüntü ekleri için yükleyeceği yerel dosyanın boyutu, MB cinsinden. Varsayılan 16’dır. Uzaktan görüntü olmayan ekler ayrı bir 256 MB sınırı kullanır. Bu değeri çok yüksek yapmak, tüm dosyanın belleğe yüklenmesine ve uygulamanın donmasına veya çökmesine neden olabilir.',
@@ -841,7 +853,8 @@ export const tr: Translations = {
       kindCloudDesc: 'Ulak Cloud hesabınız aracılığıyla keşfedilen barındırılan bir örnek.',
       kindSshDesc: 'SSH üzerinden erişilen bir Ulak kurulumu.',
       labelTitle: 'İsim',
-      labelDesc: 'Gereklidir. Bu örneğin göründüğü her yerde gösterilir; benzersiz olmalıdır (örn. “Homelab”, “İş dizüstü bilgisayarı”).',
+      labelDesc:
+        'Gereklidir. Bu örneğin göründüğü her yerde gösterilir; benzersiz olmalıdır (örn. “Homelab”, “İş dizüstü bilgisayarı”).',
       labelPlaceholder: 'Homelab',
       urlTitle: "Geçit URL'si",
       sshHostTitle: 'SSH sunucusu',
@@ -898,9 +911,11 @@ export const tr: Translations = {
       localDesc: 'Localhost üzerinde özel bir Ulak backend başlatın. Bu varsayılandır ve çevrimdışı çalışır.',
       remoteTitle: 'Uzak gateway',
       remoteDesc: "Bu masaüstü shell'ini uzak bir Ulak backend'e bağlayın.",
-      remoteAuthHint: "Barındırılan gateway'ler OAuth veya kullanıcı adı ve şifre kullanır; kendi kendine barındırılanlar oturum jetonu kullanabilir.",
+      remoteAuthHint:
+        "Barındırılan gateway'ler OAuth veya kullanıcı adı ve şifre kullanır; kendi kendine barındırılanlar oturum jetonu kullanabilir.",
       cloudTitle: 'Ulak Bulut',
-      cloudDesc: "Ulak Cloud'a bir kez giriş yapın ve hesabınızdaki ajanlardan birini seçin — yapıştıracak bir URL yok.",
+      cloudDesc:
+        "Ulak Cloud'a bir kez giriş yapın ve hesabınızdaki ajanlardan birini seçin — yapıştıracak bir URL yok.",
       cloudSignInTitle: 'Ulak Cloud',
       cloudSignIn: "Ulak Cloud'a giriş yap",
       cloudSignedIn: "Ulak Cloud'a giriş yapıldı",
@@ -942,10 +957,12 @@ export const tr: Translations = {
       authSignedInPassword:
         'Bu geçit kullanıcı adı ve şifre kullanır. Oturum açtınız; oturum otomatik olarak yenilenir.',
       authSignedInOauth: 'Bu geçit OAuth kullanır. Oturum açtınız; oturum otomatik olarak yenilenir.',
-      authNeedsPassword: 'Bu geçit kullanıcı adı ve şifre kullanır. Bu masaüstü uygulamayı yetkilendirmek için oturum açın.',
+      authNeedsPassword:
+        'Bu geçit kullanıcı adı ve şifre kullanır. Bu masaüstü uygulamayı yetkilendirmek için oturum açın.',
       authNeedsOauth: provider => `This gateway uses OAuth. Sign in with ${provider} to authorize this desktop app.`,
       tokenTitle: 'Oturum belirteci',
-      tokenDesc: 'REST ve WebSocket erişimi için kullanılan gösterge paneli oturum belirteci. Kaydedilmiş belirteci korumak için boş bırakın.',
+      tokenDesc:
+        'REST ve WebSocket erişimi için kullanılan gösterge paneli oturum belirteci. Kaydedilmiş belirteci korumak için boş bırakın.',
       existingToken: value => `Existing token ${value}`,
       savedToken: 'kaydedildi',
       pasteSessionToken: 'Oturum belirtecini yapıştır',
@@ -1120,14 +1137,16 @@ export const tr: Translations = {
       deepLinkErrorUrl: "Yalnızca http:// ve https:// sunucu URL'lerine izin verilir.",
       deepLinkErrorTooLarge: 'Yapılandırma yükü 32KB sınırını aşıyor.',
       importButton: 'İçe Aktar',
-      importPlaceholder: 'Bir mcp.json parçacığı, npx/docker komutu, claude mcp add satırı, URL veya Cursor bağlantısı yapıştırın…',
+      importPlaceholder:
+        'Bir mcp.json parçacığı, npx/docker komutu, claude mcp add satırı, URL veya Cursor bağlantısı yapıştırın…',
       importNoMatch: 'Yapıştırılan metinde sunucu yapılandırması tanınmadı.',
       importConfirm: "mcp.json'a ekle",
       importConfirmMany: count => `Add ${count} servers to mcp.json`
     },
     model: {
       loading: 'Model yapılandırması yükleniyor...',
-      appliesDesc: 'Yeni oturumlar için geçerlidir. Aktif sohbeti hızlı değiştirmek için kompozitördeki model seçiciyi kullanın.',
+      appliesDesc:
+        'Yeni oturumlar için geçerlidir. Aktif sohbeti hızlı değiştirmek için kompozitördeki model seçiciyi kullanın.',
       provider: 'Sağlayıcı',
       model: 'Model',
       applying: 'Uygulanıyor...',
@@ -1136,13 +1155,15 @@ export const tr: Translations = {
       reasoningOff: 'Kapalı',
       defaultsFailed: 'Model varsayılanları kaydedilemedi',
       loadFailed: 'Modeller yüklenemedi',
-      restartRequired: 'Bu arka uç güncelleme sonrasında eski kodu çalıştırıyor. Yeni kodu yüklemek için yeniden başlatın.',
+      restartRequired:
+        'Bu arka uç güncelleme sonrasında eski kodu çalıştırıyor. Yeni kodu yüklemek için yeniden başlatın.',
       restartBackend: 'Arka ucu yeniden başlat',
       restartingBackend: 'Arka uç yeniden başlatılıyor...',
       restartFailed: 'Arka uç yeniden başlatılamadı',
       auxiliaryTitle: 'Yardımcı modeller',
       resetAllToMain: 'Hepsini ana modele sıfırla',
-      auxiliaryDesc: 'Yardımcı görevler varsayılan olarak ana model üzerinde çalışır. Herhangi bir göreve özel bir model atayarak bunu geçersiz kılabilirsiniz.',
+      auxiliaryDesc:
+        'Yardımcı görevler varsayılan olarak ana model üzerinde çalışır. Herhangi bir göreve özel bir model atayarak bunu geçersiz kılabilirsiniz.',
       setToMain: 'Ana modele ayarla',
       change: 'Değiştir',
       autoUseMain: 'otomatik · ana modeli kullan',
@@ -1765,7 +1786,8 @@ export const tr: Translations = {
       backup: 'Yedek oluştur',
       backupDesc: 'Yapılandırma, hafızalar, beceriler ve oturumları ziple',
       debugShare: 'Hata ayıklama paylaşımı',
-      debugShareDesc: 'Düzenlenmiş bir rapor + günlükleri yükle, paylaşılabilir bağlantılar al (6 saatte otomatik silinir)',
+      debugShareDesc:
+        'Düzenlenmiş bir rapor + günlükleri yükle, paylaşılabilir bağlantılar al (6 saatte otomatik silinir)',
       debugShareRunning: 'Hata ayıklama raporu yükleniyor...',
       debugShareLinks: 'Bağlantıları paylaş',
       debugShareFailed: 'Paylaşım hatası',
@@ -1828,7 +1850,8 @@ export const tr: Translations = {
     required: 'Gerekli',
     recommended: 'Tavsiye edilen',
     advanced: count => `Gelişmiş (${count})`,
-    noTokenNeeded: 'Bu platform burada bir jeton gerektirmez. Yukarıdaki kurulum kılavuzunu kullanın, ardından aşağıda etkinleştirin.',
+    noTokenNeeded:
+      'Bu platform burada bir jeton gerektirmez. Yukarıdaki kurulum kılavuzunu kullanın, ardından aşağıda etkinleştirin.',
     enabled: 'Etkinleştirildi',
     disabled: 'Devre dışı',
     unsavedChanges: 'Kaydedilmemiş değişiklikler',
@@ -1918,7 +1941,10 @@ export const tr: Translations = {
         help: 'Socket Modu için gereken uygulama seviyesi jetonunu kullanın.',
         placeholder: 'Slack uygulama jetonunu yapıştırın'
       },
-      SLACK_ALLOWED_USERS: { label: 'İzin verilen Slack kullanıcı kimlikleri', help: 'Tavsiye edilir. Virgülle ayrılmış Slack kullanıcı kimlikleri.' },
+      SLACK_ALLOWED_USERS: {
+        label: 'İzin verilen Slack kullanıcı kimlikleri',
+        help: 'Tavsiye edilir. Virgülle ayrılmış Slack kullanıcı kimlikleri.'
+      },
       MATTERMOST_URL: { label: "Sunucu URL'si", placeholder: 'https://mattermost.example.com' },
       MATTERMOST_TOKEN: { label: 'Bot jetonu' },
       MATTERMOST_ALLOWED_USERS: {
@@ -1938,7 +1964,10 @@ export const tr: Translations = {
         help: "Çalışan bir signal-cli REST köprüsünün URL'si."
       },
       SIGNAL_ACCOUNT: { label: 'Telefon numarası', help: 'Signal-cli köprünüz ile kayıtlı numara.' },
-      SIGNAL_ALLOWED_USERS: { label: 'İzin verilen Signal kullanıcıları', help: 'Tavsiye edilir. Virgülle ayrılmış Signal kimlikleri.' },
+      SIGNAL_ALLOWED_USERS: {
+        label: 'İzin verilen Signal kullanıcıları',
+        help: 'Tavsiye edilir. Virgülle ayrılmış Signal kimlikleri.'
+      },
       WHATSAPP_ENABLED: {
         label: 'WhatsApp köprüsünü etkinleştir',
         help: 'Aşağıdaki anahtar ile otomatik olarak ayarlanır. Gerektiğini bilmiyorsanız dokunmayın.'
@@ -1978,7 +2007,8 @@ export const tr: Translations = {
     toggleFailed: (name, enabled) => `"${name}" ${enabled ? 'on' : 'off'} açılamadı`,
     newSubscription: 'Yeni abonelik',
     restarting: 'Ağ geçidi yeniden başlatılıyor...',
-    restartNeeded: "Webhook'lar etkin, ancak alıcının çevrimiçi olabilmesi için ağ geçidinin yine de yeniden başlatılması gerekiyor.",
+    restartNeeded:
+      "Webhook'lar etkin, ancak alıcının çevrimiçi olabilmesi için ağ geçidinin yine de yeniden başlatılması gerekiyor.",
     restartGateway: 'Ağ geçidini yeniden başlat',
     restartingGateway: 'Yeniden başlatılıyor...',
     restartFailed: (detail: string) => `Ağ geçidi yeniden başlatılamadı${detail}`,
@@ -2255,8 +2285,10 @@ export const tr: Translations = {
     failedSave: 'Cron işi kaydedilemedi',
     editTitle: 'Cron işini düzenle',
     createTitle: 'Yeni cron işi',
-    editDesc: 'Programı, istemi veya teslim hedefini güncelleyin. Değişiklikler bir sonraki çalıştırmada uygulanacaktır.',
-    createDesc: "Bir istemi otomatik olarak çalışacak şekilde planlayın. Cron sözdizimini veya 'her 15 dakikada bir' gibi doğal bir ifadeyi kullanın.",
+    editDesc:
+      'Programı, istemi veya teslim hedefini güncelleyin. Değişiklikler bir sonraki çalıştırmada uygulanacaktır.',
+    createDesc:
+      "Bir istemi otomatik olarak çalışacak şekilde planlayın. Cron sözdizimini veya 'her 15 dakikada bir' gibi doğal bir ifadeyi kullanın.",
     nameLabel: 'İsim',
     namePlaceholder: 'Sabah brifingi',
     promptLabel: 'İstem',
@@ -2418,7 +2450,8 @@ export const tr: Translations = {
       createFailed: 'Proje oluşturulamadı',
       staleBackend:
         'Projeleri oluşturmak için Ulak arka ucunu güncelleyin — arka ucunuz bu masaüstü uygulamasından eski (Ayarlar → Güncellemeler → Arka Uç).',
-      deleteConfirm: "Bu, Ulak'tan kaydedilmiş projeyi kaldırır. Dosyalar, git depoları ve çalışma ağaçları etkilenmez.",
+      deleteConfirm:
+        "Bu, Ulak'tan kaydedilmiş projeyi kaldırır. Dosyalar, git depoları ve çalışma ağaçları etkilenmez.",
       startWork: 'Yeni çalışma ağacı',
       newWorktreeTitle: 'Yeni çalışma ağacı',
       newWorktreeDesc: 'Bu çalışma ağacı için dalı adlandırın.',
@@ -2680,7 +2713,8 @@ export const tr: Translations = {
     snippets: {
       codeReview: {
         label: 'Kod incelemesi',
-        description: 'Mevcut değişikliği regresyonlar, gözden kaçan kenar durumları ve eksik testler açısından denetleyin.',
+        description:
+          'Mevcut değişikliği regresyonlar, gözden kaçan kenar durumları ve eksik testler açısından denetleyin.',
         text: 'Lütfen bunu hatalar, regresyonlar ve eksik testler açısından inceleyin.'
       },
       implementationPlan: {
@@ -2818,8 +2852,10 @@ export const tr: Translations = {
       viewAsList: 'Liste olarak görüntüle',
       revert: 'Geri al',
       revertAll: 'Tümünü geri al',
-      revertConfirm: 'Bu dosyadaki değişiklikler atılsın ve dosya taahhüt edilmiş duruma geri döndürülsün mü? Bu geri alınamaz.',
-      revertAllConfirm: 'Tüm değişiklikler atılsın ve dosyalar taahhüt edilmiş duruma geri döndürülsün mü? Bu geri alınamaz.',
+      revertConfirm:
+        'Bu dosyadaki değişiklikler atılsın ve dosya taahhüt edilmiş duruma geri döndürülsün mü? Bu geri alınamaz.',
+      revertAllConfirm:
+        'Tüm değişiklikler atılsın ve dosyalar taahhüt edilmiş duruma geri döndürülsün mü? Bu geri alınamaz.',
       staged: 'Sahneye alındı',
       noChanges: 'Değişiklik yok',
       notRepo: 'Git deposu değil',
@@ -2880,7 +2916,8 @@ export const tr: Translations = {
     maybeLater: 'Belki sonra',
     moreChanges: count => `+ ${count} daha fazla değişiklik${count === 1 ? '' : 's'} dahil.`,
     manualTitle: 'Terminalinizden güncelleme',
-    manualBody: "Ulak'ı komut satırından yüklediniz, bu yüzden güncellemeler de orada çalışır. Bunu terminalinize yapıştırın:",
+    manualBody:
+      "Ulak'ı komut satırından yüklediniz, bu yüzden güncellemeler de orada çalışır. Bunu terminalinize yapıştırın:",
     manualPickedUp: 'Ulak, bir sonraki başlatmada yeni sürümü alacaktır.',
     guiSkewTitle: 'Masaüstü uygulamasını güncelleyin',
     guiSkewBody:
@@ -2949,12 +2986,14 @@ export const tr: Translations = {
       "Bu uygulamayı zaten çalıştırdığınız bir Ulak ağ geçidine bağlayın veya bu bilgisayara Ulak'ı yerel olarak kurun.",
     connectExistingTitle: "Mevcut Ulak'a bağlan",
     connectExistingShort: 'Mevcut olanı bağla',
-    connectExistingDesc: 'Bir oturum jetonu veya tarayıcı ile giriş ile uzaktan bir arka uç kullanın. Yerel kurulum başlatılmayacak.',
+    connectExistingDesc:
+      'Bir oturum jetonu veya tarayıcı ile giriş ile uzaktan bir arka uç kullanın. Yerel kurulum başlatılmayacak.',
     installLocalTitle: "Ulak'ı yerel olarak kur",
     installLocalDesc: "Ulak'ı indir, Python ortamını oluştur ve arka ucu bu bilgisayarda çalıştır.",
     localStartUnavailable: 'Yerel kurulum başlatılamadı. Ulak Masaüstünü yeniden başlatın ve tekrar deneyin.',
     remoteSetupTitle: "Mevcut Ulak'a bağlan",
-    remoteSetupDesc: "Ağ geçidi URL'nizi girin. Ulak Masaüstü, bir jetona veya tarayıcı girişine ihtiyaç duyulup duyulmadığını algılayacaktır.",
+    remoteSetupDesc:
+      "Ağ geçidi URL'nizi girin. Ulak Masaüstü, bir jetona veya tarayıcı girişine ihtiyaç duyulup duyulmadığını algılayacaktır.",
     remoteUrlTitle: "Ağ Geçidi URL'si",
     remoteUrlDesc: "Uzak olduğunda https:// dahil olmak üzere Ulak geçidinin temel URL'sini kullanın.",
     remoteUrlPlaceholder: 'https://gateway.example.com/ulak',
@@ -3002,7 +3041,7 @@ export const tr: Translations = {
   },
 
   onboarding: {
-    headerTitle: "Ulak Ajan Kurulumuna Hos Geldiniz",
+    headerTitle: 'Ulak Ajan Kurulumuna Hos Geldiniz',
     headerDesc: 'Sohbete baslamak icin bir yapay zeka saglayicisi baglayin. Cogu secenek tek tikla halledilir.',
     preparingInstall: 'Ulak kurulumu tamamliyor. Ilk acilista bu islem genelde bir dakikadan kisa surer.',
     starting: 'Ulak Baslatiliyor…',
@@ -3010,7 +3049,7 @@ export const tr: Translations = {
     collapse: 'Daralt',
     otherProviders: 'Diger Saglayicilar',
     haveApiKey: 'API anahtarim var',
-    chooseLater: "Saglayiciyi daha sonra sececegim",
+    chooseLater: 'Saglayiciyi daha sonra sececegim',
     recommended: 'Onerilen',
     connected: 'Baglandi',
     featuredPitch: 'Tek uyelik, 300+ oncu model — Ulak i kullanmanin en iyi yolu',
@@ -3032,7 +3071,8 @@ export const tr: Translations = {
       xai: { short: 'Grok modelleri', description: 'xAI Grok modellerine doğrudan erişim.' },
       local: {
         short: 'kendi sunucusunda barındırılan',
-        description: "Ulak'ı yerel veya kendi sunucusunda barındırılan OpenAI uyumlu bir uç noktaya yönlendirin (vLLM, llama.cpp, Ollama, vb.)."
+        description:
+          "Ulak'ı yerel veya kendi sunucusunda barındırılan OpenAI uyumlu bir uç noktaya yönlendirin (vLLM, llama.cpp, Ollama, vb.)."
       }
     },
     backToSignIn: 'Girişe geri dön',
@@ -3207,7 +3247,8 @@ export const tr: Translations = {
       toggleTokensPerSecond: 'Saniye başına jeton',
       toggleVersion: 'Sürüm ve güncellemeler',
       toggleWorkspace: 'Çalışma Alanı',
-      cacheHitRateTitle: 'Bu oturumdaki istem önbellek isabet oranı — önbelleğe alınmış tokenler daha ucuzdur, bu yüzden yüksek olması daha ucuzdur',
+      cacheHitRateTitle:
+        'Bu oturumdaki istem önbellek isabet oranı — önbelleğe alınmış tokenler daha ucuzdur, bu yüzden yüksek olması daha ucuzdur',
       tokensPerSecondTitle: 'Son 10 model çağrısı üzerinden ortalama saniye başına çıkış tokenleri',
       agents: 'Ajanlar',
       closeAgents: 'Ajanları kapat',
@@ -3416,7 +3457,8 @@ export const tr: Translations = {
     showStripTab: title => `${title} göster`,
     hideStripTab: title => `${title} gizle`,
     lastTabKeptTitle: 'Son sekme kalır',
-    lastTabKeptBody: 'Bu alanda en az bir görünür sekme olmalıdır. Önce başka bir sekme gösterin veya tüm yan çubuğu daraltın.',
+    lastTabKeptBody:
+      'Bu alanda en az bir görünür sekme olmalıdır. Önce başka bir sekme gösterin veya tüm yan çubuğu daraltın.',
     toggleStripTab: title => `${title} sekmesini değiştir`,
     minimize: 'Küçült',
     restore: 'Geri yükle',
@@ -3444,7 +3486,8 @@ export const tr: Translations = {
     deletePreset: name => `${name} sil`,
     zoneEditorTitle: 'Bölge düzenleyici',
     editorHintPre: 'tıklayarak böl ·',
-    editorHintPost: 'satırı çevirir · birleştirmek için bölgeler arasında sürükle · boyutlandırmak için paylaşılan kenarları sürükle',
+    editorHintPost:
+      'satırı çevirir · birleştirmek için bölgeler arasında sürükle · boyutlandırmak için paylaşılan kenarları sürükle',
     templateColumns: 'Sütunlar',
     templateRows: 'Satırlar',
     templateGrid: 'Izgara',
@@ -3539,8 +3582,7 @@ export const tr: Translations = {
       restoreCheckpoint: 'Kontrol noktasını geri yükle',
       restoreFromHere: 'Kontrol noktasını geri yükle — bu istemden tekrar çalıştır',
       restoreTitle: 'Bu kontrol noktasına geri yükle?',
-      restoreBody:
-        'Bu istemden sonraki her şey konuşmadan kaldırılır ve istem buradan tekrar çalıştırılır.',
+      restoreBody: 'Bu istemden sonraki her şey konuşmadan kaldırılır ve istem buradan tekrar çalıştırılır.',
       restoreConfirm: 'Geri yükle ve yeniden çalıştır',
       restoreNext: 'Sonraki kontrol noktasını geri yükle',
       goForward: 'İleri git',
@@ -3577,7 +3619,8 @@ export const tr: Translations = {
       questionProgress: (answered, total) => `${total}'in ${answered} tanesi yanıtlandı`,
       lateAnswer: (question, choice) => `Yanıt: "${question}" — benim cevabım: ${choice}`,
       lateAnswerTip: 'Bu cevabı bir takip mesajı olarak taslak hâline getir',
-      lateAnswerHint: 'Bu istem artık beklemiyor. Bunu bir takip mesajı olarak taslak hâline getirmek için bir seçenek seçin.'
+      lateAnswerHint:
+        'Bu istem artık beklemiyor. Bunu bir takip mesajı olarak taslak hâline getirmek için bir seçenek seçin.'
     },
     mcpSetup: {
       installTitle: server => `${server} MCP sunucusunu ekle?`,
@@ -3598,7 +3641,8 @@ export const tr: Translations = {
       catalogSource: 'Nous onaylı katalogdan',
       envRequired: 'Önce gerekli kimlik bilgilerini doldurun',
       sendFailed: 'MCP kurulum yanıtı gönderilemedi',
-      reloadFailed: 'Sunucu kaydedildi, ancak MCP araçları yeniden yükleme başarısız oldu — bir sonraki oturumda yüklenir',
+      reloadFailed:
+        'Sunucu kaydedildi, ancak MCP araçları yeniden yükleme başarısız oldu — bir sonraki oturumda yüklenir',
       gatewayDisconnected: 'Ulak geçidi bağlı değil'
     },
     tool: {
@@ -3650,8 +3694,16 @@ export const tr: Translations = {
         runningTool: action => `Çalıştırılıyor ${action.toLowerCase()}`
       },
       titles: {
-        browser_click: { done: 'Sayfa öğesine tıklandı', pending: 'Sayfa öğesine tıklanıyor', pendingAction: 'Tıklanıyor' },
-        browser_fill: { done: 'Form alanı dolduruldu', pending: 'Form alanı dolduruluyor', pendingAction: 'Dolduruluyor' },
+        browser_click: {
+          done: 'Sayfa öğesine tıklandı',
+          pending: 'Sayfa öğesine tıklanıyor',
+          pendingAction: 'Tıklanıyor'
+        },
+        browser_fill: {
+          done: 'Form alanı dolduruldu',
+          pending: 'Form alanı dolduruluyor',
+          pendingAction: 'Dolduruluyor'
+        },
         browser_navigate: { done: 'Sayfa açıldı', pending: 'Sayfa açılıyor', pendingAction: 'Açılıyor' },
         browser_snapshot: {
           done: 'Sayfa anlık görüntüsü alındı',
@@ -3680,8 +3732,16 @@ export const tr: Translations = {
           pendingAction: 'Aranıyor'
         },
         terminal: { done: 'Komut çalıştırıldı', pending: 'Komut çalıştırılıyor', pendingAction: 'Çalıştırılıyor' },
-        todo: { done: 'Güncellenen yapılacaklar', pending: 'Yapılacaklar güncelleniyor', pendingAction: 'Güncelleniyor' },
-        vision_analyze: { done: 'Görüntü analiz edildi', pending: 'Görüntü analiz ediliyor', pendingAction: 'Analiz ediliyor' },
+        todo: {
+          done: 'Güncellenen yapılacaklar',
+          pending: 'Yapılacaklar güncelleniyor',
+          pendingAction: 'Güncelleniyor'
+        },
+        vision_analyze: {
+          done: 'Görüntü analiz edildi',
+          pending: 'Görüntü analiz ediliyor',
+          pendingAction: 'Analiz ediliyor'
+        },
         web_extract: { done: 'Web sayfası okunuyor', pending: 'Web sayfası okuma', pendingAction: 'Okuma' },
         web_search: { done: 'Webde arandı', pending: 'Webde aranıyor', pendingAction: 'Arama' },
         write_file: { done: 'Dosya düzenlendi', pending: 'Dosya düzenleniyor', pendingAction: 'Düzenleme' }
@@ -3694,7 +3754,8 @@ export const tr: Translations = {
     sudoSendFailed: 'Sudo şifresi gönderilemedi',
     secretSendFailed: 'Gizli gönderilemedi',
     sudoTitle: 'Yönetici şifresi',
-    sudoDesc: 'Ulak, ayrıcalıklı bir komutu çalıştırmak için sudo şifrenize ihtiyaç duyuyor. Bu sadece yerel ajanınıza gönderilir.',
+    sudoDesc:
+      'Ulak, ayrıcalıklı bir komutu çalıştırmak için sudo şifrenize ihtiyaç duyuyor. Bu sadece yerel ajanınıza gönderilir.',
     sudoPlaceholder: 'sudo şifresi',
     secretTitle: 'Gizli gerekli',
     secretDesc: 'Ulak devam edebilmek için bir kimlik bilgisine ihtiyaç duyuyor.',

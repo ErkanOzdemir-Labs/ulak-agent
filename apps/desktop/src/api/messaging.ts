@@ -10,7 +10,7 @@ import type {
   WebhooksResponse
 } from '@/types/ulak'
 
-import { ulakApi, profileScoped } from './client'
+import { profileScoped, ulakApi } from './client'
 
 export function getMessagingPlatforms(profile?: null | string): Promise<MessagingPlatformsResponse> {
   return ulakApi<MessagingPlatformsResponse>({

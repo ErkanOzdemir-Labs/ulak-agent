@@ -1,6 +1,5 @@
 import { useCallback, useEffect, useLayoutEffect, useRef } from 'react'
 
-import { listAllProfileSessions, listSidebarSessions, type SessionInfo } from '@/ulak'
 import { sameCronSignature } from '@/lib/session-signatures'
 import {
   isMessagingSource,
@@ -39,6 +38,7 @@ import {
 } from '@/store/session'
 import { $removedSessionIds } from '@/store/session-removal'
 import { $sessionTiles, $workingSessionIds, getRecentlySettledSessionIds } from '@/store/session-states'
+import { listAllProfileSessions, listSidebarSessions, type SessionInfo } from '@/ulak'
 
 import { refreshCronJobs as refreshCronJobsStore } from '../../cron/cron-actions'
 

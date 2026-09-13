@@ -8,9 +8,9 @@
  * job cannot invalidate every other bot's list.
  */
 
+import { cleanup, fireEvent, render, screen, waitFor } from '@testing-library/react'
 import type * as UlakSdk from '@ulak/plugin-sdk'
 import { queryClient } from '@ulak/plugin-sdk'
-import { cleanup, fireEvent, render, screen, waitFor } from '@testing-library/react'
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 
 const { request } = vi.hoisted(() => ({ request: vi.fn(async () => ({})) }))

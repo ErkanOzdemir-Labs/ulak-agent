@@ -8,7 +8,6 @@ import { SidebarPanelLabel } from '@/app/shell/sidebar-label'
 import { DisclosureCaret } from '@/components/ui/disclosure-caret'
 import { SidebarGroup, SidebarGroupContent } from '@/components/ui/sidebar'
 import type { UlakGitWorktree } from '@/global'
-import type { SessionInfo } from '@/ulak'
 import { useI18n } from '@/i18n'
 import { flattenSessionsWithBranches } from '@/lib/session-branch-tree'
 import {
@@ -28,6 +27,7 @@ import {
 } from '@/store/layout'
 import { sessionPinId } from '@/store/session'
 import { $sessionDotStateById, hasLiveTurn } from '@/store/session-dot-state'
+import type { SessionInfo } from '@/ulak'
 
 import { SidebarDateDivider, SidebarSectionMeta } from './chrome'
 import { mergeVisibleReorder, orderRowsWithinGroups, reorderableRowIds } from './order'

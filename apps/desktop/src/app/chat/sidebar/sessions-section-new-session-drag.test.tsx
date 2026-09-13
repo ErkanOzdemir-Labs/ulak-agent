@@ -2,8 +2,8 @@ import { cleanup, fireEvent, render, screen, waitFor } from '@testing-library/re
 import type { ReactNode } from 'react'
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 
-import type { SessionInfo } from '@/ulak'
 import { switchBranchInRepo } from '@/store/projects'
+import type { SessionInfo } from '@/ulak'
 
 import {
   EnteredProjectContent,

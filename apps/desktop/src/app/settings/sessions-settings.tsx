@@ -3,13 +3,6 @@ import { useCallback, useEffect, useState } from 'react'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Tip } from '@/components/ui/tooltip'
-import {
-  deleteSession,
-  getUlakConfigRecord,
-  listAllProfileSessions,
-  saveUlakConfig,
-  setSessionArchived
-} from '@/ulak'
 import { useI18n } from '@/i18n'
 import { sessionTitle } from '@/lib/chat-runtime'
 import { pathLeaf } from '@/lib/display-path'
@@ -20,7 +13,8 @@ import { notify, notifyError } from '@/store/notifications'
 import { applyConfiguredDefaultProjectDir, ensureDefaultWorkspaceCwd, setSessions } from '@/store/session'
 import { untombstoneSessions } from '@/store/session-removal'
 import { forgetSessionUnread } from '@/store/session-unread'
-import type { UlakConfigRecord, SessionInfo } from '@/types/ulak'
+import type { SessionInfo, UlakConfigRecord } from '@/types/ulak'
+import { deleteSession, getUlakConfigRecord, listAllProfileSessions, saveUlakConfig, setSessionArchived } from '@/ulak'
 
 import { EmptyState, ListRow, SectionHeading, SettingsContent, SettingsSkeleton, ToggleRow } from './primitives'
 import { useDeepLinkHighlight } from './use-deep-link-highlight'

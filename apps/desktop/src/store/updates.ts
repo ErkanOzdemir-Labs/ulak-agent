@@ -14,7 +14,6 @@ import type {
   DesktopUpdateStatus,
   DesktopVersionInfo
 } from '@/global'
-import { checkUlakUpdate, getActionStatus, updateUlak } from '@/ulak'
 import { translateNow } from '@/i18n'
 import { persistString, storedString } from '@/lib/storage'
 import { $connectionsRegistry, refreshConnectionsRegistry } from '@/store/connections'
@@ -22,6 +21,7 @@ import { reconnectGateway } from '@/store/gateway-reconnect'
 import { dismissNotification, notify } from '@/store/notifications'
 import { $connection } from '@/store/session'
 import type { BackendUpdateCheckResponse } from '@/types/ulak'
+import { checkUlakUpdate, getActionStatus, updateUlak } from '@/ulak'
 
 export interface UpdateApplyState {
   applying: boolean

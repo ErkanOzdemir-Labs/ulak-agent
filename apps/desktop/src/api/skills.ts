@@ -9,7 +9,7 @@ import type {
 } from '@/types/ulak'
 import type { ActionResponse } from '@/types/ulak'
 
-import { capabilityScoped, ulakApi, type ProfileScope, profileScoped } from './client'
+import { capabilityScoped, type ProfileScope, profileScoped, ulakApi } from './client'
 
 export function getSkills(profile?: ProfileScope): Promise<SkillInfo[]> {
   return window.ulakDesktop.api<SkillInfo[]>({

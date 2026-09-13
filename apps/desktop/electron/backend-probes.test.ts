@@ -15,10 +15,10 @@ import { test } from 'vitest'
 import {
   canImportUlakCli,
   DEFAULT_PROBE_TIMEOUT_MS,
-  ulakRuntimeImportProbe,
   PROBE_TIMEOUT_MS,
   resolveProbeTimeoutMs,
   shouldTrustUlakOverride,
+  ulakRuntimeImportProbe,
   verifyUlakCli
 } from './backend-probes'
 

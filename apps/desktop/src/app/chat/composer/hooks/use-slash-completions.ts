@@ -2,7 +2,6 @@ import type { Unstable_TriggerAdapter, Unstable_TriggerItem } from '@assistant-u
 import { useStore } from '@nanostores/react'
 import { useCallback, useEffect } from 'react'
 
-import type { UlakGateway } from '@/ulak'
 import { sessionTitle } from '@/lib/chat-runtime'
 import {
   type CommandsCatalogLike,
@@ -18,6 +17,7 @@ import {
 import { $slashCompletionsEpoch, cachedSlashCompletion, hasCachedSlashCompletion } from '@/lib/slash-completion-cache'
 import { normalize } from '@/lib/text'
 import { $sessions } from '@/store/session'
+import type { UlakGateway } from '@/ulak'
 
 import type { CompletionEntry, CompletionPayload } from './use-live-completion-adapter'
 import { useLiveCompletionAdapter } from './use-live-completion-adapter'

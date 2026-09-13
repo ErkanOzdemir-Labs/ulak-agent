@@ -3,7 +3,6 @@ import { useEffect, useRef } from 'react'
 
 import { shouldApplyPostBootProgressError } from '@/components/boot-failure-reauth'
 import type { UlakConnection } from '@/global'
-import { UlakGateway } from '@/ulak'
 import { translateNow } from '@/i18n'
 import { desktopDefaultCwd } from '@/lib/desktop-fs'
 import { decideLivenessForceClose, LIVENESS_REPROBE_DELAY_MS } from '@/lib/gateway-liveness-policy'
@@ -80,6 +79,7 @@ import {
 } from '@/store/session-states'
 import { windowProfileOverride } from '@/store/windows'
 import type { RpcEvent } from '@/types/ulak'
+import { UlakGateway } from '@/ulak'
 
 import { stashGatewaySurvivor, survivorIsStale, takeGatewaySurvivor } from './gateway-hmr-survivor'
 

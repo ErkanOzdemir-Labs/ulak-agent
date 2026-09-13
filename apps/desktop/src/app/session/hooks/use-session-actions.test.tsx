@@ -1,6 +1,6 @@
-import { registryBackendScopeKey } from '@ulak/shared'
 import { useStore } from '@nanostores/react'
 import { act, cleanup, render, waitFor } from '@testing-library/react'
+import { registryBackendScopeKey } from '@ulak/shared'
 import type { MutableRefObject } from 'react'
 import { useEffect, useRef } from 'react'
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
@@ -9,16 +9,6 @@ import { NO_PROJECT_ID } from '@/app/chat/sidebar/projects/workspace-groups'
 import { resolveSessionRpcOwner } from '@/app/contrib/wiring-routing'
 import { $terminalTakeover, setTerminalTakeover } from '@/app/right-sidebar/store'
 import { noteActiveTreeGroup, revealTreePane } from '@/components/pane-shell/tree/store'
-import {
-  deleteSession,
-  getAllSessionMessages,
-  getLatestSessionMessages,
-  getSession,
-  type ProfileScope,
-  type SessionInfo,
-  type SessionResumeResponse,
-  setSessionArchived
-} from '@/ulak'
 import { createClientSessionState } from '@/lib/chat-runtime'
 import { $clarifyRequests, clearClarifyRequest, setClarifyRequest } from '@/store/clarify'
 import { clearSessionDraft, stashSessionDraft, takeSessionDraft } from '@/store/composer'
@@ -69,6 +59,16 @@ import { $removedSessionIds, $sessionMutationsInFlight } from '@/store/session-r
 import { requestForSessionProfile, type SessionProfileRoute } from '@/store/session-request-router'
 import { $sessionTiles, sessionTileOwnerRoute } from '@/store/session-states'
 import { $sessionSeenCounts, $unreadFinishedMarkers } from '@/store/session-unread'
+import {
+  deleteSession,
+  getAllSessionMessages,
+  getLatestSessionMessages,
+  getSession,
+  type ProfileScope,
+  type SessionInfo,
+  type SessionResumeResponse,
+  setSessionArchived
+} from '@/ulak'
 
 import sessionResumeActiveTurn from '../../../../../../tests/fixtures/session-resume-active-turn.json'
 import { deferred } from '../../../test/deferred'

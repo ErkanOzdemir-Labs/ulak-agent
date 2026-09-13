@@ -182,9 +182,7 @@ describe('signInLabel', () => {
   })
 
   it('OAuth gateway names the provider', () => {
-    expect(signInLabel({ url: 'x', isPassword: false, providerLabel: 'Ulak Labs' })).toBe(
-      'Sign in with Ulak Labs'
-    )
+    expect(signInLabel({ url: 'x', isPassword: false, providerLabel: 'Ulak Labs' })).toBe('Sign in with Ulak Labs')
   })
 
   it('null reauth falls back to the generic provider phrase', () => {

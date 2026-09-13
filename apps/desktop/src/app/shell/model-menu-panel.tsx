@@ -5,7 +5,6 @@ import { useState } from 'react'
 import { useSessionView } from '@/app/chat/session-view'
 import { Codicon } from '@/components/ui/codicon'
 import { DropdownMenuItem, dropdownMenuRow } from '@/components/ui/dropdown-menu'
-import type { UlakGateway } from '@/ulak'
 import { useI18n } from '@/i18n'
 import { modelOptionsQueryKey, reconcileSelectionAfterCatalogRefresh, requestModelOptions } from '@/lib/model-options'
 import { currentPickerSelection } from '@/lib/model-status-label'
@@ -22,6 +21,7 @@ import {
 } from '@/store/session'
 import { sessionTileDelegate } from '@/store/session-states'
 import type { ModelOptionsResponse } from '@/types/ulak'
+import type { UlakGateway } from '@/ulak'
 
 import { ModelCatalogMenu, type ModelMenuController } from './model-catalog-menu'
 

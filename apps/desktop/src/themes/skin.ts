@@ -15,7 +15,7 @@
  * still picks `.dark` from the real background luminance.
  */
 
-import type { UlakSkin, SkinColors } from '@ulak/shared/skin'
+import type { SkinColors, UlakSkin } from '@ulak/shared/skin'
 
 import { ensureContrast, luminance, mix, normalizeHex, readableOn } from './color'
 import type { DesktopTheme, DesktopThemeColors } from './types'

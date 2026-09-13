@@ -10,7 +10,7 @@ import type {
   SessionSearchResponse
 } from '@/types/ulak'
 
-import { capabilityScoped, getApiRequestConnection, ulakApi, type ProfileScope, profileScoped } from './client'
+import { capabilityScoped, getApiRequestConnection, type ProfileScope, profileScoped, ulakApi } from './client'
 
 const SESSION_LIST_REQUEST_TIMEOUT_MS = 60_000
 

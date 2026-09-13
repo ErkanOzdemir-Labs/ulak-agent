@@ -8,7 +8,7 @@ import type {
   ModelOptionsResponse
 } from '@/types/ulak'
 
-import { capabilityScoped, ulakApi, type ProfileScope, profileScoped, STARTUP_REQUEST_TIMEOUT_MS } from './client'
+import { capabilityScoped, type ProfileScope, profileScoped, STARTUP_REQUEST_TIMEOUT_MS, ulakApi } from './client'
 
 export function getGlobalModelInfo(profile?: null | string): Promise<ModelInfoResponse> {
   return ulakApi<ModelInfoResponse>({

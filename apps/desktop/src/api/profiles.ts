@@ -6,7 +6,7 @@ import type {
   ProfilesResponse
 } from '@/types/ulak'
 
-import { capabilityScoped, ulakApi, type ProfileScope, STARTUP_REQUEST_TIMEOUT_MS } from './client'
+import { capabilityScoped, type ProfileScope, STARTUP_REQUEST_TIMEOUT_MS, ulakApi } from './client'
 
 export function getProfiles(): Promise<ProfilesResponse> {
   return ulakApi<ProfilesResponse>({

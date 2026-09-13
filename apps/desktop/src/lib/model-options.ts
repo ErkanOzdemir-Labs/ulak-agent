@@ -1,5 +1,5 @@
-import { getGlobalModelOptions, type UlakGateway, type ModelOptionsResponse } from '@/ulak'
 import type { ModelOptionProvider } from '@/types/ulak'
+import { getGlobalModelOptions, type ModelOptionsResponse, type UlakGateway } from '@/ulak'
 
 /**
  * True only when a persisted **manual** composer pick has been removed from the

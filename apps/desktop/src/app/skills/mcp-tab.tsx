@@ -16,22 +16,6 @@ import { Switch } from '@/components/ui/switch'
 import { TextTab } from '@/components/ui/text-tab'
 import { Textarea } from '@/components/ui/textarea'
 import { Tip } from '@/components/ui/tooltip'
-import {
-  authMcpServer,
-  getActionStatus,
-  getLogs,
-  getMcpCatalog,
-  getMcpOAuthFlow,
-  getUsageAnalytics,
-  type UlakGateway,
-  installMcpCatalogEntry,
-  type McpCatalogEntry,
-  type McpTestResult,
-  type ProfileScope,
-  profileScopeKey,
-  saveMcpServers,
-  testMcpServer
-} from '@/ulak'
 import { type Translations, useI18n } from '@/i18n'
 import { compactNumber } from '@/lib/format'
 import { brandFor } from '@/lib/mcp-brands'
@@ -45,6 +29,22 @@ import { cn } from '@/lib/utils'
 import { notify, notifyError } from '@/store/notifications'
 import { $activeGatewayProfile, normalizeProfileKey } from '@/store/profile'
 import { $activeSessionId } from '@/store/session'
+import {
+  authMcpServer,
+  getActionStatus,
+  getLogs,
+  getMcpCatalog,
+  getMcpOAuthFlow,
+  getUsageAnalytics,
+  installMcpCatalogEntry,
+  type McpCatalogEntry,
+  type McpTestResult,
+  type ProfileScope,
+  profileScopeKey,
+  saveMcpServers,
+  testMcpServer,
+  type UlakGateway
+} from '@/ulak'
 
 import { ulakConfigCacheWriter, useUlakConfigRecord } from '../hooks/use-config-record'
 import { useOnProfileSwitch } from '../hooks/use-on-profile-switch'

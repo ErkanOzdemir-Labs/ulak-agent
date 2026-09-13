@@ -1,10 +1,10 @@
 import { useQuery } from '@tanstack/react-query'
 import { useEffect, useMemo, useRef, useState } from 'react'
 
-import { getElevenLabsVoices, getUlakConfigSchema, saveUlakConfig } from '@/ulak'
 import { useI18n } from '@/i18n'
 import { notifyError } from '@/store/notifications'
 import type { UlakConfigRecord } from '@/types/ulak'
+import { getElevenLabsVoices, getUlakConfigSchema, saveUlakConfig } from '@/ulak'
 
 import { setUlakConfigCache, useUlakConfigRecord } from '../hooks/use-config-record'
 

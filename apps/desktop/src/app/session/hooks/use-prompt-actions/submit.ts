@@ -1,6 +1,5 @@
 import { type MutableRefObject, useCallback } from 'react'
 
-import { PROMPT_SUBMIT_REQUEST_TIMEOUT_MS } from '@/ulak'
 import type { Translations } from '@/i18n'
 import { type ChatMessage, textPart } from '@/lib/chat-messages'
 import { optimisticAttachmentRef } from '@/lib/chat-runtime'
@@ -32,6 +31,7 @@ import {
   touchSessionActivity
 } from '@/store/session'
 import { $sessionStates } from '@/store/session-states'
+import { PROMPT_SUBMIT_REQUEST_TIMEOUT_MS } from '@/ulak'
 
 import type { ClientSessionState } from '../../../types'
 import { sessionContextDrift } from '../session-context-drift'

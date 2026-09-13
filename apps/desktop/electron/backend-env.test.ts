@@ -7,10 +7,10 @@ import {
   appendUniquePathEntries,
   buildDesktopBackendEnv,
   buildDesktopBackendPath,
-  ulakManagedNodePathEntries,
   normalizeUlakHomeRoot,
   pathEnvKey,
-  POSIX_SANE_PATH_ENTRIES
+  POSIX_SANE_PATH_ENTRIES,
+  ulakManagedNodePathEntries
 } from './backend-env'
 
 test('desktop backend PATH adds Ulak-managed bins and missing POSIX sane entries', () => {
@@ -120,9 +120,7 @@ test('buildDesktopBackendEnv extends PYTHONPATH and backend PATH together', () =
 
   assert.equal(env.PYTHONPATH, '/repo/ulak-agent:/existing/pythonpath')
   assert.ok(
-    env.PATH.startsWith(
-      '/Users/test/.ulak/node/bin:/Users/test/.ulak/node:/Users/test/.ulak/ulak-agent/venv/bin:'
-    )
+    env.PATH.startsWith('/Users/test/.ulak/node/bin:/Users/test/.ulak/node:/Users/test/.ulak/ulak-agent/venv/bin:')
   )
   assert.ok(env.PATH.includes('/opt/homebrew/bin'))
 })
@@ -177,9 +175,7 @@ test('Windows PATH casing and delimiter are preserved without POSIX sane entries
   // Windows leads with the portable layout (install.ps1 unpacks node.exe
   // straight into node\, no bin\), then the POSIX shape for migrated installs.
   assert.ok(
-    env.Path.startsWith(
-      'C:\\Users\\test\\AppData\\Local\\ulak\\node;C:\\Users\\test\\AppData\\Local\\ulak\\node\\bin;'
-    )
+    env.Path.startsWith('C:\\Users\\test\\AppData\\Local\\ulak\\node;C:\\Users\\test\\AppData\\Local\\ulak\\node\\bin;')
   )
   assert.ok(env.Path.includes('\\venv\\Scripts;'))
   assert.ok(env.Path.includes(';C:\\Windows\\System32;C:\\Windows'))

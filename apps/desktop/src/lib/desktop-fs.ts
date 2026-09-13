@@ -1,10 +1,5 @@
 import { ulakApi } from '@/api/client'
-import type {
-  UlakConnection,
-  UlakReadDirResult,
-  UlakReadFileTextResult,
-  UlakSelectPathsOptions
-} from '@/global'
+import type { UlakConnection, UlakReadDirResult, UlakReadFileTextResult, UlakSelectPathsOptions } from '@/global'
 import { $connection } from '@/store/session'
 
 export interface DesktopFsRemotePicker {

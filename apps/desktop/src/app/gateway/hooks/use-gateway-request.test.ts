@@ -1,5 +1,5 @@
-import type { GatewayWsUrlResult } from '@ulak/shared'
 import { act, renderHook } from '@testing-library/react'
+import type { GatewayWsUrlResult } from '@ulak/shared'
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 
 const gatewayMocks = vi.hoisted(() => ({
@@ -50,8 +50,6 @@ vi.mock('@/ulak', async importOriginal => {
   return { ...actual, UlakGateway: FakeUlakGateway }
 })
 
-import type * as UlakModule from '@/ulak'
-import type { UlakGateway } from '@/ulak'
 import {
   $gateway,
   closeSecondaryGateways,
@@ -61,6 +59,8 @@ import {
 } from '@/store/gateway'
 import { $activeGatewayProfile } from '@/store/profile'
 import { $connection, $gatewayState } from '@/store/session'
+import type * as UlakModule from '@/ulak'
+import type { UlakGateway } from '@/ulak'
 
 import { useGatewayRequest } from './use-gateway-request'
 

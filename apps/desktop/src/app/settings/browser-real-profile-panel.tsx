@@ -1,8 +1,8 @@
 import { useCallback, useState } from 'react'
 
-import { type ProfileScope, saveUlakConfigRecord } from '@/ulak'
 import { useI18n } from '@/i18n'
 import { notify, notifyError } from '@/store/notifications'
+import { type ProfileScope, saveUlakConfigRecord } from '@/ulak'
 
 import { ulakConfigCacheWriter, useUlakConfigRecord } from '../hooks/use-config-record'
 

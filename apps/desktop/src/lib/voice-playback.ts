@@ -1,6 +1,5 @@
 import { resolveGatewayWsUrl } from '@ulak/shared'
 
-import { getApiRequestConnection, getApiRequestProfile, speakText } from '@/ulak'
 import {
   cutSentences,
   directTtsConfig,
@@ -14,6 +13,7 @@ import {
   type VoicePlaybackSource,
   type VoicePlaybackState
 } from '@/store/voice-playback'
+import { getApiRequestConnection, getApiRequestProfile, speakText } from '@/ulak'
 
 import { sanitizeTextForSpeech } from './speech-text'
 

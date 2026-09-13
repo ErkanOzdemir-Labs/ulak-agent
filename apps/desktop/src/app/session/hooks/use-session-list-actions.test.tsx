@@ -2,7 +2,6 @@ import { act, render, renderHook } from '@testing-library/react'
 import { Suspense } from 'react'
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 
-import type { SessionInfo, SidebarSessionsResponse } from '@/ulak'
 import { $cronJobs, setCronJobs } from '@/store/cron'
 import {
   beginGatewaySwitch,
@@ -28,6 +27,7 @@ import {
   setSessions,
   setSessionsLoading
 } from '@/store/session'
+import type { SessionInfo, SidebarSessionsResponse } from '@/ulak'
 
 import { deferred } from '../../../test/deferred'
 

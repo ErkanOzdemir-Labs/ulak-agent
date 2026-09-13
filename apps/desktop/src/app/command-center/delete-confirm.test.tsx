@@ -2,9 +2,9 @@ import { cleanup, fireEvent, render, screen, waitFor } from '@testing-library/re
 import { MemoryRouter } from 'react-router'
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 
+import { $sessions } from '@/store/session'
 import type * as UlakApi from '@/ulak'
 import type { SessionInfo } from '@/ulak'
-import { $sessions } from '@/store/session'
 
 import { CommandCenterView } from './index'
 

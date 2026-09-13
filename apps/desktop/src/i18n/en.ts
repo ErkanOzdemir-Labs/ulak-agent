@@ -891,8 +891,7 @@ export const en: Translations = {
       intro:
         'Local by default. Use remote when this app should drive a Ulak backend elsewhere. Gateway connections are machine-level; profiles are discovered from the gateways you connect.',
       envOverrideTitle: 'Environment variables are controlling this desktop session.',
-      envOverrideDesc:
-        'Unset ULAK_DESKTOP_REMOTE_URL and ULAK_DESKTOP_REMOTE_TOKEN to use the saved setting below.',
+      envOverrideDesc: 'Unset ULAK_DESKTOP_REMOTE_URL and ULAK_DESKTOP_REMOTE_TOKEN to use the saved setting below.',
       modeTitle: 'Connection mode',
       localTitle: 'Local gateway',
       localDesc: 'Start a private Ulak backend on localhost. This is the default and works offline.',
@@ -2896,8 +2895,7 @@ export const en: Translations = {
     errorTitle: 'Update didn’t finish',
     errorBody: 'No worries — nothing was lost. You can try again now.',
     blockerTitle: 'Close local previews to update Ulak?',
-    blockerBody:
-      'Ulak needs to stop these local previews before updating. This will not modify or delete your files.',
+    blockerBody: 'Ulak needs to stop these local previews before updating. This will not modify or delete your files.',
     foreignBlockerTitle: 'Close other processes to update Ulak',
     foreignBlockerBody:
       'Ulak can’t safely close these processes automatically. Close the app, terminal, or service that owns each one, then try the update again.',
@@ -2945,8 +2943,7 @@ export const en: Translations = {
     installTo: 'Will install to',
     retryAfterRun: 'I’ve run it -- retry',
     setupChoiceTitle: 'Set up Ulak Desktop',
-    setupChoiceDesc:
-      'Connect this app to a Ulak gateway you already run, or install Ulak locally on this computer.',
+    setupChoiceDesc: 'Connect this app to a Ulak gateway you already run, or install Ulak locally on this computer.',
     connectExistingTitle: 'Connect to existing Ulak',
     connectExistingShort: 'Connect existing',
     connectExistingDesc: 'Use a remote backend with a session token or browser sign-in. No local install will start.',

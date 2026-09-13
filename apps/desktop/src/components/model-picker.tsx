@@ -1,7 +1,6 @@
 import { useQuery } from '@tanstack/react-query'
 import { useEffect, useMemo, useState } from 'react'
 
-import { getLocalModelsStatus } from '@/ulak'
 import { useI18n } from '@/i18n'
 import { modelOptionsQueryKey, requestModelOptions } from '@/lib/model-options'
 import { modelSearchText } from '@/lib/model-search-text'
@@ -11,10 +10,11 @@ import { useStoreSelector } from '@/lib/use-session-slice'
 import { $localModelsEnabled } from '@/store/local-models-flag'
 import { $localRuntimeJobs, runningModelDownloads, watchLocalRuntimeJobs } from '@/store/local-runtime-jobs'
 import type { LocalModelLoadProgress, ModelOptionProvider, ModelPricing } from '@/types/ulak'
+import { getLocalModelsStatus } from '@/ulak'
 
-import type { UlakGateway } from '../ulak'
 import { cn } from '../lib/utils'
 import { startManualOnboarding } from '../store/onboarding'
+import type { UlakGateway } from '../ulak'
 
 import { InlineNotice } from './notifications'
 import { Button } from './ui/button'

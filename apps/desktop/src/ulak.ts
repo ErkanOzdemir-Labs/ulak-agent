@@ -7,13 +7,13 @@
 export {
   getApiRequestConnection,
   getApiRequestProfile,
-  ulakApi,
-  UlakGateway,
   profileScopeKey,
   PROMPT_SUBMIT_REQUEST_TIMEOUT_MS,
   setApiRequestConnection,
   setApiRequestProfile,
-  STARTUP_REQUEST_TIMEOUT_MS
+  STARTUP_REQUEST_TIMEOUT_MS,
+  ulakApi,
+  UlakGateway
 } from './api/client'
 export type { ProfileScope } from './api/client'
 export * from './api/config'
@@ -65,8 +65,6 @@ export type {
   ElevenLabsVoicesResponse,
   EnvVarInfo,
   GatewayReadyPayload,
-  UlakConfig,
-  UlakConfigRecord,
   LogsResponse,
   McpCatalogEntry,
   McpCatalogResponse,
@@ -124,6 +122,8 @@ export type {
   ToolsetInfo,
   ToolsetModel,
   ToolsetModelsResponse,
+  UlakConfig,
+  UlakConfigRecord,
   WebhookCreatePayload,
   WebhookCreateResponse,
   WebhookEnableResponse,

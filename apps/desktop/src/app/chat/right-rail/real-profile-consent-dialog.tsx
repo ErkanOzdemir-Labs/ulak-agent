@@ -11,7 +11,6 @@ import {
   DialogHeader,
   DialogTitle
 } from '@/components/ui/dialog'
-import { saveUlakConfigRecord } from '@/ulak'
 import { useI18n } from '@/i18n'
 import { Check, Globe } from '@/lib/icons'
 import { notify, notifyError } from '@/store/notifications'
@@ -22,6 +21,7 @@ import {
   claimRealProfilePrompt,
   releaseRealProfilePrompt
 } from '@/store/real-profile-consent'
+import { saveUlakConfigRecord } from '@/ulak'
 
 import { ulakConfigCacheWriter, useUlakConfigRecord } from '../../hooks/use-config-record'
 

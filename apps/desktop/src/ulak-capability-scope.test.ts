@@ -1,11 +1,11 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 
 import {
-  getUlakConfigRecord,
   getMcpCatalog,
   getSkillContent,
   getSkills,
   getToolsets,
+  getUlakConfigRecord,
   getUsageAnalytics,
   installSkillFromHub,
   profileScopeKey,
