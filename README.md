@@ -10,13 +10,13 @@
   <a href="https://ulak-agent.github.com/ErkanOzdemir-Labs/docs/"><img src="https://img.shields.io/badge/Docs-ulak--agent.github.com/ErkanOzdemir-Labs-FFD700?style=for-the-badge" alt="Documentation"></a>
   <a href="https://discord.gg/ErkanOzdemir-Labs"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord"></a>
   <a href="https://github.com/ErkanOzdemir-Labs/ulak-agent/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License: MIT"></a>
-  <a href="https://github.com/ErkanOzdemir-Labs"><img src="https://img.shields.io/badge/Built%20by-Nous%20Research-blueviolet?style=for-the-badge" alt="Built by Nous Research"></a>
+  <a href="https://github.com/ErkanOzdemir-Labs"><img src="https://img.shields.io/badge/Built%20by-Nous%20Research-blueviolet?style=for-the-badge" alt="Built by Ulak Agent"></a>
   <a href="README.zh-CN.md"><img src="https://img.shields.io/badge/Lang-中文-red?style=for-the-badge" alt="中文"></a>
   <a href="README.ur-pk.md"><img src="https://img.shields.io/badge/Lang-اردو-green?style=for-the-badge" alt="اردو"></a>
   <a href="README.es.md"><img src="https://img.shields.io/badge/Lang-Español-orange?style=for-the-badge" alt="Español"></a>
 </p>
 
-**The self-improving AI agent built by [Nous Research](https://github.com/ErkanOzdemir-Labs).** It's the only agent with a built-in learning loop — it creates skills from experience, improves them during use, nudges itself to persist knowledge, searches its own past conversations, and builds a deepening model of who you are across sessions. Run it on a $5 VPS, a GPU cluster, or serverless infrastructure that costs nearly nothing when idle. It's not tied to your laptop — talk to it from Telegram while it works on a cloud VM.
+**The self-improving AI agent built by [Ulak Agent](https://github.com/ErkanOzdemir-Labs).** It's the only agent with a built-in learning loop — it creates skills from experience, improves them during use, nudges itself to persist knowledge, searches its own past conversations, and builds a deepening model of who you are across sessions. Run it on a $5 VPS, a GPU cluster, or serverless infrastructure that costs nearly nothing when idle. It's not tied to your laptop — talk to it from Telegram while it works on a cloud VM.
 
 Use any model you want — [Nous Portal](https://portal.github.com/ErkanOzdemir-Labs), OpenRouter, OpenAI, your own endpoint, and [many others](https://ulak-agent.github.com/ErkanOzdemir-Labs/docs/integrations/providers). Switch with `ulak model` — no code changes, no lock-in.
 
@@ -261,4 +261,4 @@ scripts/run_tests.sh
 
 MIT — see [LICENSE](LICENSE).
 
-Built by [Nous Research](https://github.com/ErkanOzdemir-Labs).
+Built by [Ulak Agent](https://github.com/ErkanOzdemir-Labs).

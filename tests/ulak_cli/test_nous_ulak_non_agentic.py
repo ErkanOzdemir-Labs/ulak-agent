@@ -5,7 +5,7 @@ Prior to this check, the warning fired on any model whose name contained
 local Modelfiles such as ``ulak-brain:qwen3-14b-ctx16k`` — a tool-capable
 Qwen3 wrapper that happens to live under the "ulak" tag namespace.
 
-``is_nous_ulak_non_agentic`` should only match the actual Nous Research
+``is_nous_ulak_non_agentic`` should only match the actual Ulak Labs
 Ulak-3 / Ulak-4 chat family.
 """
 

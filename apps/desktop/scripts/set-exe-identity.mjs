@@ -64,8 +64,8 @@ async function stampExeIdentity(exe, desktopRoot = resolve(import.meta.dirname, 
     'version-string': {
       ProductName: 'Ulak',
       FileDescription: 'Ulak',
-      CompanyName: 'Nous Research',
-      LegalCopyright: 'Copyright (c) 2026 Nous Research'
+      CompanyName: 'Ulak Agent',
+      LegalCopyright: 'Copyright (c) 2026 Ulak Agent'
     }
   })
 

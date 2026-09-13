@@ -1,5 +1,5 @@
 {
-  description = "Ulak Agent - AI agent framework by Nous Research";
+  description = "Ulak Agent - AI agent framework by Ulak Agent";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";

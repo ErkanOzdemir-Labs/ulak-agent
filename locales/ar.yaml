@@ -388,7 +388,7 @@ gateway:
     not_git_repo:            "✗ ليس مستودع git — لا يمكن التحديث."
     ulak_cmd_not_found:    "✗ تعذّر تحديد موقع أمر `ulak`. Ulak يعمل، لكن أمر التحديث لم يجد الملف التنفيذي على PATH أو عبر مُفسّر Python الحالي. جرّب تشغيل `ulak update` يدويًا في طرفيتك."
     start_failed:            "✗ فشل بدء التحديث: {error}"
-    starting:                "⚕ جارٍ بدء تحديث Ulak… سأبثّ التقدّم هنا."
+    starting:                "➶ جارٍ بدء تحديث Ulak… سأبثّ التقدّم هنا."
 
   usage:
     rate_limits:              "⏱️ **حدود المعدّل:** {state}"

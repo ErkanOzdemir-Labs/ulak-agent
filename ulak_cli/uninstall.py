@@ -423,7 +423,7 @@ def run_gui_uninstall(args):
     skip_confirm = bool(getattr(args, "yes", False))
 
     print()
-    _print_box("│         ⚕ Ulak Chat GUI Uninstaller                  │", Colors.MAGENTA)
+    _print_box("│         ➶ Ulak Chat GUI Uninstaller                  │", Colors.MAGENTA)
     print()
 
     if not summary["gui_installed"]:
@@ -487,7 +487,7 @@ def run_uninstall(args):
         return
 
     print()
-    _print_box("│            ⚕ Ulak Agent Uninstaller                  │", Colors.MAGENTA)
+    _print_box("│            ➶ Ulak Agent Uninstaller                  │", Colors.MAGENTA)
     print()
 
     # Show what will be affected
@@ -695,7 +695,7 @@ def _perform_uninstall(
     for line, col in _RELOAD_HINT[windows]:
         print(color(line, col) if col else line)
     print()
-    print("Thank you for using Ulak Agent! ⚕")
+    print("Thank you for using Ulak Agent! ➶")
     print()
 
 

@@ -2,7 +2,7 @@
 name = "ulak-bootstrap"
 version = "0.0.1"
 description = "Ulak Setup — signed installer that drives scripts/install.ps1"
-authors = ["Nous Research <info@github.com/ErkanOzdemir-Labs>"]
+authors = ["Ulak Agent <info@github.com/ErkanOzdemir-Labs>"]
 edition = "2021"
 rust-version = "1.77"
 

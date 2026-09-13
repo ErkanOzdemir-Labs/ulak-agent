@@ -1334,7 +1334,7 @@ if (IS_WINDOWS) {
 app.setAboutPanelOptions({
   applicationName: APP_NAME,
   applicationVersion: resolveUlakVersion(),
-  copyright: 'Copyright © 2026 Nous Research'
+  copyright: 'Copyright © 2026 Ulak Labs'
 })
 
 // Custom scheme for streaming audio/video into the renderer. Local paths read
@@ -7344,7 +7344,7 @@ function installMediaPermissions() {
 // OAuth remote-gateway auth.
 //
 // Hosted Ulak gateways gate the dashboard behind an OAuth provider (e.g.
-// Nous Research) instead of a static session token. The auth model is
+// Ulak Labs) instead of a static session token. The auth model is
 // fundamentally different from the token path:
 //
 //   * REST is authed by HttpOnly session cookies (``ulak_session_at``),
@@ -11071,7 +11071,7 @@ async function probeRemoteAuthMode(rawUrl) {
 
   if (authRequired) {
     // Best-effort: a gated gateway exposes the registered providers so the
-    // button can read "Sign in with Nous Research" instead of a generic
+    // button can read "Sign in with Ulak Labs" instead of a generic
     // label, and so a username/password provider can be distinguished from
     // an OAuth-redirect one (``supports_password``). A failure here doesn't
     // change the auth mode, so swallow it.
@@ -17630,7 +17630,7 @@ function showAboutPanelFresh() {
       applicationVersion: skew.outOfSync
         ? `${resolveUlakVersion()} — app build out of date, update the desktop app`
         : resolveUlakVersion(),
-      copyright: 'Copyright © 2026 Nous Research'
+      copyright: 'Copyright © 2026 Ulak Labs'
     })
     app.showAboutPanel()
   })

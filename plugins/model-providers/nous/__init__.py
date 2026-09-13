@@ -68,7 +68,7 @@ class NousProfile(ProviderProfile):
 
 nous = NousProfile(
     name="nous", aliases=("nous-portal", "erkanozdemir-labs"), env_vars=("NOUS_API_KEY",),
-    display_name="Nous Research", description="Nous Research — Ulak model family",
+    display_name="Ulak Labs", description="Ulak Labs — Ulak model family",
     signup_url="https://github.com/ErkanOzdemir-Labs/", fallback_models=("ulak-3-405b", "ulak-3-70b"),
     base_url="https://inference-api.github.com/ErkanOzdemir-Labs/v1", auth_type="oauth_device_code",
 )

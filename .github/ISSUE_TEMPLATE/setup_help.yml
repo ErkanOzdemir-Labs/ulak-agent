@@ -13,7 +13,7 @@ body:
         - If you're in a chat session, you can use `/debug` instead — it does the same thing
         - Try `ulak update` to get the latest version
         - Check the [README troubleshooting section](https://github.com/ErkanOzdemir-Labs/ulak-agent#troubleshooting)
-        - For general questions, consider the [Nous Research Discord](https://discord.gg/ErkanOzdemir-Labs) for faster help
+        - For general questions, consider the [Ulak Agent Discord](https://discord.gg/ErkanOzdemir-Labs) for faster help
 
   - type: textarea
     id: description

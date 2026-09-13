@@ -1282,9 +1282,9 @@ class CLISessionMixin:
         if not msg_count:
             try:
                 from ulak_cli.skin_engine import get_active_goodbye
-                goodbye = get_active_goodbye("Goodbye! ⚕")
+                goodbye = get_active_goodbye("Goodbye! ➶")
             except Exception:
-                goodbye = "Goodbye! ⚕"
+                goodbye = "Goodbye! ➶"
             print(goodbye)
             return
 

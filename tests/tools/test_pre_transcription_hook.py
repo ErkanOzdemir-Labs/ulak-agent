@@ -35,7 +35,7 @@ import ulak_cli.plugins as plugins_mod
 from tools import transcription_tools
 
 
-PROMPT = "Ulak, Teknium, Nous Research, kanban"
+PROMPT = "Ulak, Teknium, Ulak Labs, kanban"
 
 
 # ---------------------------------------------------------------------------

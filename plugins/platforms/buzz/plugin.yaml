@@ -9,7 +9,7 @@ description: >
   channels/DMs and the Ulak agent. Relay operations shell out to the
   buzz CLI binary (JSON in/out); verified inbound media uses Ulak' bundled
   HTTP client.
-author: Nous Research
+author: Ulak Agent
 # ``requires_env`` entries are surfaced in ``ulak config`` UI via the
 # platform-plugin env var injector in ``ulak_cli/config.py``.
 requires_env:

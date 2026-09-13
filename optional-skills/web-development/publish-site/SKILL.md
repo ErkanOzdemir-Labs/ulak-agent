@@ -2,7 +2,7 @@
 name: publish-site
 description: Versioned site deploys to GitHub/Cloudflare/Netlify Pages.
 version: 1.0.0
-author: Ulak Agent (Nous Research)
+author: Ulak Agent (Ulak Agent)
 license: MIT
 platforms: [linux, macos, windows]
 metadata:

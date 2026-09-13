@@ -97,12 +97,12 @@ def _bare_custom_provider_def(current_base_url: str) -> Optional[ProviderDef]:
 # --- Non-agentic model warning
 
 _ULAK_MODEL_WARNING = (
-    "Nous Research Ulak 3 & 4 models are NOT agentic and are not designed "
+    "Ulak Labs Ulak 3 & 4 models are NOT agentic and are not designed "
     "for use with Ulak Agent. They lack the tool-calling capabilities "
     "required for agent workflows. Consider using an agentic model instead "
     "(Claude, GPT, Gemini, DeepSeek, etc.).")
 
-# Match only the real Nous Research Ulak 3 / 4 chat families; a bare substring check
+# Match only the real Ulak Labs Ulak 3 / 4 chat families; a bare substring check
 # false-positived on tool-capable local Modelfiles like ``ulak-brain:qwen3-14b-ctx16k``.
 #   match:    ErkanOzdemir-Labs/Ulak-3-Llama-3.1-70B, ulak-4-405b, openrouter/ulak3:70b
 #   no match: ulak-brain:qwen3-14b-ctx16k, qwen3:14b, claude-opus-4-6

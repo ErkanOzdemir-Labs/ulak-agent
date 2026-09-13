@@ -4,7 +4,7 @@
   "private": true,
   "version": "0.17.0",
   "description": "Native desktop shell for Ulak Agent.",
-  "author": "Nous Research",
+  "author": "Ulak Agent",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ErkanOzdemir-Labs/ulak-agent.git"
@@ -286,7 +286,7 @@
     },
     "linux": {
       "category": "Development",
-      "maintainer": "Nous Research <support@github.com/ErkanOzdemir-Labs>",
+      "maintainer": "Ulak Agent <support@github.com/ErkanOzdemir-Labs>",
       "synopsis": "Native desktop shell for Ulak Agent.",
       "target": [
         "AppImage",
