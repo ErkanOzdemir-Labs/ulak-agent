@@ -4,7 +4,7 @@
 
 # Ulak Agent
 <p align="center">
-  <a href="https://github.com/ErkanOzdemir-Labs/ulak-agent">Ulak Agent</a> | <a href="https://github.com/ErkanOzdemir-Labs/ulak-agent/releases">Ulak Desktop</a>
+  <a href="https://github.com/ErkanOzdemir-Labs/ulak-agent">Ulak Agent</a> | <a href="website/docs/user-guide/desktop.md">Ulak Desktop</a>
 </p>
 <p align="center">
   <a href="website/docs/index.mdx"><img src="https://img.shields.io/badge/Docs-Ulak_Agent-FFD700?style=for-the-badge" alt="Documentation"></a>
